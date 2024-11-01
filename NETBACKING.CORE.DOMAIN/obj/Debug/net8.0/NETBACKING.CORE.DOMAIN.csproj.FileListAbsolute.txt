@@ -1,0 +1,12 @@
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.deps.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.dll
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.pdb
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.AssemblyInfo.cs
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.sourcelink.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.dll
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\refint\NETBACKING.CORE.DOMAIN.dll
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.pdb
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\ref\NETBACKING.CORE.DOMAIN.dll

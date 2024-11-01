@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NETBACKING.PRESENTATION.WEBAPP.props" />
+</Project>
