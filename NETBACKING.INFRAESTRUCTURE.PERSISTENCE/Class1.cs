@@ -1,5 +1,0 @@
-﻿namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE;
-
-public class Class1
-{
-}

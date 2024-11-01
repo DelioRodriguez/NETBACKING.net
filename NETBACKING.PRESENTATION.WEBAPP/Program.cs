@@ -1,7 +1,13 @@
+using NETBACKING.INFRAESTRUCTURE.IDENTITY;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddIdentityInfrastructure(builder.Configuration);
+builder.Services.AddContextInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 

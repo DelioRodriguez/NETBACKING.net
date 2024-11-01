@@ -6,4 +6,18 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NETBACKING.CORE.APPLICATION\NETBACKING.CORE.APPLICATION.csproj" />
+      <ProjectReference Include="..\NETBACKING.INFRAESTRUCTURE.IDENTITY\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj" />
+      <ProjectReference Include="..\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj" />
+      <ProjectReference Include="..\NETBACKING.INFRAESTRUCTURE.SHARED\NETBACKING.INFRAESTRUCTURE.SHARED.csproj" />
+    </ItemGroup>
+
 </Project>
