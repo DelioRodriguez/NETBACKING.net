@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE;
 
@@ -9,6 +11,7 @@ public static class ServicioRegistration
 {
     public static void AddContextInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
+        services.AddScoped<IUserRepository,UserRepository> ();
         if (configuration.GetValue<bool>("UseInMemoryDatabase"))
         {
             services.AddDbContext<AppDbContext>(options =>

@@ -15,6 +15,7 @@
     <ItemGroup>
       <ProjectReference Include="..\NETBACKING.CORE.APPLICATION\NETBACKING.CORE.APPLICATION.csproj" />
       <ProjectReference Include="..\NETBACKING.CORE.DOMAIN\NETBACKING.CORE.DOMAIN.csproj" />
+      <ProjectReference Include="..\NETBACKING.INFRAESTRUCTURE.IDENTITY\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj" />
     </ItemGroup>
 
 </Project>

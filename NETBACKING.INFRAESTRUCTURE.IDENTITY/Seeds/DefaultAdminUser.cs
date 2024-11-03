@@ -26,7 +26,7 @@ public class DefaultAdminUser
             var user = await userManager.FindByEmailAsync(adminUser.Email);
             if (user == null)
             {
-                await userManager.CreateAsync(adminUser, "Admin123!");
+                await userManager.CreateAsync(adminUser, "Admin123.@");
                 await userManager.AddToRoleAsync(adminUser, Roles.Admin.ToString());
             }
         }

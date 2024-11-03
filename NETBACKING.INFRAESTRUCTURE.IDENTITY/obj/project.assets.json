@@ -692,7 +692,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-rc.2.24473.5": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -705,7 +705,7 @@
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/net8.0/_._": {}
         }
       },
       "Microsoft.Extensions.DependencyModel/8.0.2": {
@@ -1717,6 +1717,10 @@
       "NETBACKING.CORE.APPLICATION/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
+          "NETBACKING.CORE.DOMAIN": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/NETBACKING.CORE.APPLICATION.dll": {}
         },
@@ -2778,10 +2782,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
-      "sha512": "3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.0-rc.2.24473.5": {
+      "sha512": "T8oVF5Kz+J5IVagQAqcFFUrc/JrjaSvpACSm+t6cNolBX1S41PZVe3JLa3bxKnz0GTkUfSPPIkaekLmpAmHu3Q==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.0-rc.2.24473.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2791,21 +2795,19 @@
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
         "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
+        "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
         "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4596,19 +4598,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rodri\\.nuget\\packages\\": {}
+    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+      "projectUniqueName": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
       "projectName": "NETBACKING.INFRAESTRUCTURE.IDENTITY",
-      "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
-      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\obj\\",
+      "projectPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+      "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4623,11 +4625,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
-              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
+            "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+              "projectPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
             },
-            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+            "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+              "projectPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
             }
           }
         }
@@ -4704,7 +4706,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,7 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Interfaces\Repositories\" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0-rc.2.24473.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\NETBACKING.CORE.DOMAIN\NETBACKING.CORE.DOMAIN.csproj" />
     </ItemGroup>
 
 </Project>

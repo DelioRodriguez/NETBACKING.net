@@ -5,7 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
-using NETBACKING.INFRAESTRUCTURE.IDENTITY.Service;
 
 namespace NETBACKING.INFRAESTRUCTURE.IDENTITY;
 
@@ -13,7 +12,7 @@ public static class ServicioRegistration
 {
     public static void AddIdentityInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddScoped<IAccountService, AccountService>();
+       
         
         if (configuration.GetValue<bool>("UseInMemoryDatabase"))
         {
@@ -27,7 +26,7 @@ public static class ServicioRegistration
             services.AddDbContext<IdentityContext>(options =>
             {
                 options.EnableSensitiveDataLogging();
-                options.UseSqlServer(configuration.GetConnectionString("IdentityConnection"),
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
                     mbox => mbox.MigrationsAssembly(typeof(IdentityContext).Assembly.FullName));
             });
         }

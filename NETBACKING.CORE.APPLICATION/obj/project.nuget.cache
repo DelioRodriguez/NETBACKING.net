@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8srRQoYlzwA=",
+  "dgSpecHash": "bd9ZxwrA3uQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0-rc.2.24473.5\\microsoft.extensions.dependencyinjection.abstractions.9.0.0-rc.2.24473.5.nupkg.sha512"
+  ],
   "logs": []
 }

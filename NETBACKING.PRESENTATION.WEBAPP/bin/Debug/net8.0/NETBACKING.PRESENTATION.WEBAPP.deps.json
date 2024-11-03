@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "8.0.10",
           "NETBACKING.CORE.APPLICATION": "1.0.0",
+          "NETBACKING.CORE.DOMAIN": "1.0.0",
           "NETBACKING.INFRAESTRUCTURE.IDENTITY": "1.0.0",
           "NETBACKING.INFRAESTRUCTURE.PERSISTENCE": "1.0.0",
           "NETBACKING.INFRAESTRUCTURE.SHARED": "1.0.0"
@@ -1032,13 +1033,23 @@
         }
       },
       "NETBACKING.CORE.APPLICATION/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
+          "NETBACKING.CORE.DOMAIN": "1.0.0"
+        },
         "runtime": {
-          "NETBACKING.CORE.APPLICATION.dll": {}
+          "NETBACKING.CORE.APPLICATION.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.CORE.DOMAIN/1.0.0": {
         "runtime": {
-          "NETBACKING.CORE.DOMAIN.dll": {}
+          "NETBACKING.CORE.DOMAIN.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.INFRAESTRUCTURE.IDENTITY/1.0.0": {
@@ -1054,7 +1065,10 @@
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {}
+          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.INFRAESTRUCTURE.PERSISTENCE/1.0.0": {
@@ -1063,15 +1077,22 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.0-rc.2.24473.5",
           "NETBACKING.CORE.APPLICATION": "1.0.0",
-          "NETBACKING.CORE.DOMAIN": "1.0.0"
+          "NETBACKING.CORE.DOMAIN": "1.0.0",
+          "NETBACKING.INFRAESTRUCTURE.IDENTITY": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.PERSISTENCE.dll": {}
+          "NETBACKING.INFRAESTRUCTURE.PERSISTENCE.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.INFRAESTRUCTURE.SHARED/1.0.0": {
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.SHARED.dll": {}
+          "NETBACKING.INFRAESTRUCTURE.SHARED.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
