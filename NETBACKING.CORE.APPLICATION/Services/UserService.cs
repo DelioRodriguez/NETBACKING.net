@@ -24,20 +24,20 @@ public class UserService : IUserService
         return await _userRepository.GetUserByIdAsync(id);
     }
 
-    public async Task CreateUser(CreateUserDto userDto)
+    public async Task CreateUser(CreateUserDto userDto, string role)
     {
         var userModel = new UserModel
         {
             UserName = userDto.UserName,
+            Password = userDto.Password,
             Email = userDto.Email,
             FirstName = userDto.FirstName,
             LastName = userDto.LastName,
-            Identification = userDto.Identification
+            Identification = userDto.Identification,
+            IsActive = true
         };
 
-        await _userRepository.CreateUserAsync(userModel);
-
-   
+        await _userRepository.CreateUserAsync(userModel, role);
     }
 
     public async Task UpdateUser(EditUserDto userDto)

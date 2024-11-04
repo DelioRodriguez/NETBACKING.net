@@ -7,7 +7,7 @@ public interface IUserService
 {
     Task<List<UserModel>> GetAllUsers();
     Task<EditUserDto> GetUserById(string id);
-    Task CreateUser(CreateUserDto userDto);
+    Task CreateUser(CreateUserDto userDto,string role);
     Task UpdateUser(EditUserDto userDto);
     Task DeleteUser(string id);
 }

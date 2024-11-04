@@ -8,6 +8,6 @@ public class ClientController : Controller
 {
     public IActionResult Index()
     {
-        throw new NotImplementedException();
+        return View();
     }
 }

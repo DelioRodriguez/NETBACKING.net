@@ -38,10 +38,11 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto userDto)
         {
+            userDto.IsActive = true;
             if (ModelState.IsValid)
             {
-                await _userService.CreateUser(userDto); // Llamar al servicio para crear el usuario
-                return RedirectToAction(nameof(Users)); // Redirigir al listado de usuarios
+                await _userService.CreateUser(userDto,userDto.UserType); // Llamar al servicio para crear el usuario
+                return RedirectToAction(nameof(Index)); // Redirigir al listado de usuarios
             }
             return View(userDto); // Volver a mostrar el formulario si hay errores
         }
@@ -62,6 +63,7 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Email = user.Email,
+                Identification = user.Identification,
                 UserName = user.UserName,
                 IsActive = user.IsActive
             };

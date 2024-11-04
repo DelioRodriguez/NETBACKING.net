@@ -12,11 +12,13 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public UserRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public UserRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager , RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
         public async Task<LoginResultDTO> AuthenticateUserAsync(LoginDTO loginDto)
@@ -94,7 +96,7 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             };
         }
 
-        public async Task CreateUserAsync(UserModel userModel)
+        public async Task CreateUserAsync(UserModel userModel, string role)
         {
             var user = new ApplicationUser
             {
@@ -103,14 +105,23 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
                 FirstName = userModel.FirstName,
                 LastName = userModel.LastName,
                 Identification = userModel.Identification,
-                IsActive = userModel.IsActive
+                IsActive = true
             };
 
-            var result = await _userManager.CreateAsync(user);
+            var result = await _userManager.CreateAsync(user, userModel.Password);
             if (!result.Succeeded)
             {
                 throw new Exception("No se pudo crear el usuario: " + string.Join(", ", result.Errors.Select(e => e.Description)));
             }
+
+            // Verificar si el rol existe, de lo contrario lanzar una excepción
+            if (!await _roleManager.RoleExistsAsync(role))
+            {
+                throw new Exception($"El rol '{role}' no existe.");
+            }
+
+            // Asignar el rol al usuario
+            await _userManager.AddToRoleAsync(user, role);
         }
 
         public async Task UpdateUserAsync(UserModel userModel)
