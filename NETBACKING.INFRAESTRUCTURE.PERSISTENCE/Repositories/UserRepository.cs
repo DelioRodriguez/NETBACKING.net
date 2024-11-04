@@ -49,9 +49,11 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             {
                 IsSuccessful = true,
                 IsActive = true,
-                RedirectUrl = redirectUrl
+                RedirectUrl = redirectUrl,
+                UserRole = roles.FirstOrDefault() // Asignar el rol del usuario aquí
             };
         }
+
 
         public async Task SignOutAsync()
         {

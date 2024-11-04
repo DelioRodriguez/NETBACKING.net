@@ -11,22 +11,6 @@
       "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\migrations\\20241103213212_dfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -165,11 +141,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "ServicioRegistration.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
@@ -187,20 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\ServiceRegistration.cs",
-              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T22:11:25.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "DefaultRoles.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
@@ -209,45 +172,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T14:07:40.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAIAxwDgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:07:00.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:06:58.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:06:59.751Z",
               "EditorCaption": ""
             },
             {
@@ -269,16 +193,16 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
               "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs*",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs*",
-              "ViewState": "AgIAACgAAAAAAAAAAAAwwDQAAAAtAAAAAAAAAA==",
+              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwDgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T23:49:35.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "DefaultClientUser.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
@@ -291,46 +215,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "DefaultAdminUser.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBwAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T14:07:42.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T22:53:10.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-03T22:10:21.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
@@ -343,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "20241101014240_InitialMigration.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
@@ -356,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "20241103213212_dfk.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
@@ -369,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "IdentityContext.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
@@ -382,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "ServicioRegistration.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
@@ -395,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
@@ -407,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 14,
               "Title": "CashAdvance.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
@@ -420,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 15,
               "Title": "Beneficiary.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
@@ -432,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 16,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
@@ -444,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 13,
               "Title": "NETBACKING.CORE.APPLICATION.csproj",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
@@ -456,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
@@ -468,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 17,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
@@ -481,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 18,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
@@ -494,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 19,
               "Title": "20241101014421_InitialMigration.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
@@ -507,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 20,
               "Title": "20241103133922_login.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
@@ -519,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 21,
               "Title": "IdentityContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
@@ -531,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 22,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
@@ -543,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 24,
               "Title": "20241101013651_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
@@ -554,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 23,
               "Title": "20241101014149_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
@@ -565,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 25,
               "Title": "20241101013455_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
@@ -576,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 26,
               "Title": "20241101013333_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
@@ -587,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 27,
               "Title": "20241101013224_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
@@ -598,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 28,
               "Title": "20241101011854_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
@@ -609,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 29,
               "Title": "20241101011625_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
@@ -620,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 30,
               "Title": "20241101011418_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
@@ -631,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 31,
               "Title": "20241101010725_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
@@ -642,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 32,
               "Title": "20241101010415_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
@@ -653,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 33,
               "Title": "20241101003537_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
@@ -664,7 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 34,
               "Title": "20241101002131_InicialIdentityMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
@@ -675,7 +573,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 35,
               "Title": "20241101001029_InicialIdentityMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
               "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",

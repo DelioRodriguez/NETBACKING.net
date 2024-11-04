@@ -3312,6 +3312,7 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore.InMemory >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
+      "Microsoft.Extensions.Identity.Core >= 8.0.10",
       "Microsoft.Extensions.Options.ConfigurationExtensions >= 9.0.0-rc.2.24473.5",
       "NETBACKING.CORE.APPLICATION >= 1.0.0",
       "NETBACKING.CORE.DOMAIN >= 1.0.0",
@@ -3378,6 +3379,10 @@
             "version": "[8.0.10, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[8.0.10, )"
+          },
+          "Microsoft.Extensions.Identity.Core": {
             "target": "Package",
             "version": "[8.0.10, )"
           },

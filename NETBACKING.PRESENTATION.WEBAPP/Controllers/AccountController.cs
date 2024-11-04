@@ -47,7 +47,15 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
                 var result = await _accountService.LoginAsync(loginDto);
                 if (result.IsSuccessful)
                 {
-                    return Redirect(result.RedirectUrl);
+                  
+                    if (result.UserRole == Roles.Admin.ToString())
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
+                    else if (result.UserRole == Roles.Client.ToString())
+                    {
+                        return RedirectToAction("Index", "Client");
+                    }
                 }
 
                 model.ErrorMessage = result.ErrorMessage;

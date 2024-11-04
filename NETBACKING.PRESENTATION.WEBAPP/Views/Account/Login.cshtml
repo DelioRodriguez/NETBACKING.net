@@ -1,33 +1,175 @@
 ﻿@model NETBACKING.CORE.APPLICATION.ViewModels.LoginViewModel
 
-
 @{
-    ViewData["Title"] = "Iniciar Sesión";
+ViewData["Title"] = "Iniciar Sesión - EcoBank";
+Layout = null;
 }
 
-<h2>@ViewData["Title"]</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Nueva fuente -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            margin: 0;
+            font-family: 'Roboto', sans-serif; 
+            background-color: #f1f1f1;
+            color: #003366; 
+        }
 
-<form asp-action="Login" method="post" asp-controller="Account">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    
-    <div class="form-group">
-        <label asp-for="Username"></label>
-        <input asp-for="Username" class="form-control" />
-        <span asp-validation-for="Username" class="text-danger"></span>
-    </div>
-    
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" class="form-control" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    
-    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
-    {
-        <div class="alert alert-danger">@Model.ErrorMessage</div>
-    }
-    
-    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-</form>
+        .login-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
 
-<a asp-controller="Account" asp-action="Register">Crear una cuenta</a>
+        .login-form {
+            width: 100%;
+            max-width: 450px; 
+            margin-bottom: 20px;
+        }
+
+        .login-form h2 {
+            margin-bottom: 30px;
+            color: #006699;
+            font-size: 40px; 
+            font-weight: bold; 
+            text-align: center; 
+        }
+
+        .form-control {
+            border: 1px solid #003366; 
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: #ffffff; 
+            color: #003366; 
+            font-size: 16px; 
+        }
+
+        .form-control:focus {
+            background-color: rgba(0, 102, 153, 0.1); 
+            box-shadow: 0 0 5px #006699; 
+        }
+
+        .btn-primary {
+            background-color: #007A33; 
+            border-color: #007A33; 
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 4px;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #006622;
+        }
+
+        .alert {
+            margin-top: 15px;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            text-align: center;
+            padding: 20px; 
+            color: #003366; 
+            background-color: #ffffff; 
+            margin-top: 20px; 
+        }
+
+        .circle {
+            width: 100%; 
+            max-width: 450px; 
+            height: 450px; 
+            border-radius: 50%; 
+            border: 10px solid #003366; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+        }
+
+        .right-section h1 {
+            font-size: 48px; 
+            margin: 0;
+            color: #003366; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .right-section p {
+            font-size: 18px;
+            margin-top: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            color: #003366;
+        }
+
+        .lock-icon {
+            font-size: 80px;
+            
+            color: #003366; 
+            
+            margin-bottom: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid d-flex flex-column flex-md-row" style="height: 100%;">
+    <div class="login-container flex-grow-1">
+        <form class="login-form" asp-action="Login" method="post" asp-controller="Account">
+            <h2>Iniciar Sesión</h2> 
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Username"></label>
+                <input asp-for="Username" class="form-control" placeholder="Usuario" required />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" class="form-control" placeholder="Contraseña" required />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+            <div class="alert alert-danger">@Model.ErrorMessage</div>
+            }
+
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+        </form>
+    </div>
+
+    <div class="right-section flex-grow-1">
+        <div class="circle">
+            <i class="fas fa-lock lock-icon"></i> 
+            <h1>EcoBank</h1>
+            <p>Donde tu dinero está seguro</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

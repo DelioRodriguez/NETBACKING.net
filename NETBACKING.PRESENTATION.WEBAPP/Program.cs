@@ -16,7 +16,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
 builder.Services.AddContextInfrastructure(builder.Configuration);
 builder.Services.AddApplicationService();
-
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login"; 
+    options.AccessDeniedPath = "/Account/Login";
+});
 var app = builder.Build();
 
 
@@ -50,6 +54,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Index}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
 app.Run();
