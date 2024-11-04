@@ -5,28 +5,30 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories;
 
-namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE;
-
-public static class ServicioRegistration
+namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
 {
-    public static void AddContextInfrastructure(this IServiceCollection services, IConfiguration configuration)
+    public static class ServicioRegistration
     {
-        services.AddScoped<IUserRepository,UserRepository> ();
-        if (configuration.GetValue<bool>("UseInMemoryDatabase"))
+        public static void AddContextInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<AppDbContext>(options =>
+            services.AddScoped<IUserRepository,UserRepository> ();
+            services.AddScoped<IDashBoardRepository, DashBoardRepository>();
+            if (configuration.GetValue<bool>("UseInMemoryDatabase"))
             {
-                options.UseInMemoryDatabase("IdentityDb");
-            });
-        }
-        else
-        {
-            services.AddDbContext<AppDbContext>(options =>
+                services.AddDbContext<AppDbContext>(options =>
+                {
+                    options.UseInMemoryDatabase("IdentityDb");
+                });
+            }
+            else
             {
-                options.EnableSensitiveDataLogging();
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-                    mbox => mbox.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
-            });
+                services.AddDbContext<AppDbContext>(options =>
+                {
+                    options.EnableSensitiveDataLogging();
+                    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
+                        mbox => mbox.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName));
+                });
+            }
         }
     }
 }
