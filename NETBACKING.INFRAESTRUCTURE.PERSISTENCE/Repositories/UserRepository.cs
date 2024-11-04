@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using NETBACKING.CORE.APPLICATION.DTOs;
 using NETBACKING.CORE.APPLICATION.Enums;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
+using NETBACKING.CORE.APPLICATION.Models;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
@@ -58,6 +60,85 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
         public async Task SignOutAsync()
         {
             await _signInManager.SignOutAsync();
+        }
+
+        public async Task<List<UserModel>> GetAllUsersAsync()
+        {
+            var users = await _userManager.Users.ToListAsync();
+            return users.Select(user => new UserModel
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Identification = user.Identification,
+                Email = user.Email,
+                UserName = user.UserName,
+                IsActive = user.IsActive
+            }).ToList();
+        }
+
+        public async Task<EditUserDto> GetUserByIdAsync(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user == null) return null;
+
+            return new EditUserDto
+            {
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Identification = user.Identification,
+                Email = user.Email,
+                UserName = user.UserName,
+                IsActive = user.IsActive
+            };
+        }
+
+        public async Task CreateUserAsync(UserModel userModel)
+        {
+            var user = new ApplicationUser
+            {
+                UserName = userModel.UserName,
+                Email = userModel.Email,
+                FirstName = userModel.FirstName,
+                LastName = userModel.LastName,
+                Identification = userModel.Identification,
+                IsActive = userModel.IsActive
+            };
+
+            var result = await _userManager.CreateAsync(user);
+            if (!result.Succeeded)
+            {
+                throw new Exception("No se pudo crear el usuario: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+            }
+        }
+
+        public async Task UpdateUserAsync(UserModel userModel)
+        {
+            var user = await _userManager.FindByIdAsync(userModel.Id);
+            if (user == null) throw new Exception("Usuario no encontrado");
+
+            user.FirstName = userModel.FirstName;
+            user.LastName = userModel.LastName;
+            user.Identification = userModel.Identification;
+            user.IsActive = userModel.IsActive;
+            user.Email = userModel.Email;
+            user.UserName = userModel.UserName;
+
+            await _userManager.UpdateAsync(user);
+        }
+
+        public async Task DeleteUserAsync(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+            if (user != null)
+            {
+                await _userManager.DeleteAsync(user);
+            }
+            else
+            {
+                throw new Exception("Usuario no encontrado");
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ namespace NETBACKING.CORE.APPLICATION
         public static void AddApplicationService(this IServiceCollection services)
         {
             services.AddScoped<IAccountService,AccountService>();
+            services.AddScoped<IUserService, UserService>();
            
             services.AddScoped<IDashBoardService, DashBoardService>();
         }
