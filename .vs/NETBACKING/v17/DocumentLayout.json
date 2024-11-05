@@ -1,201 +1,297 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Programacion 3\\NETBACKING\\",
+  "WorkspaceRootPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\seeds\\defaultclientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultclientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\migrations\\identitycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\migrations\\identitycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\context\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\programacion 3\\netbacking\\netbacking.presentation.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\migrations\\20241103213212_dfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\migrations\\20241103213212_dfk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\migrations\\20241101014240_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\migrations\\20241101014240_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.persistence\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\netbacking.infraestructure.identity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\netbacking.infraestructure.identity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\programacion 3\\netbacking\\netbacking.core.application\\netbacking.core.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\netbacking.core.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\programacion 3\\netbacking\\netbacking.core.domain\\entities\\cashadvance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\cashadvance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\programacion 3\\netbacking\\netbacking.core.domain\\entities\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\programacion 3\\netbacking\\netbacking.core.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\programacion 3\\netbacking\\netbacking.core.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.domain\\entities\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\beneficiary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\migrations\\20241101014421_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\migrations\\20241101014421_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\programacion 3\\netbacking\\netbacking.infraestructure.identity\\migrations\\20241103133922_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\migrations\\20241103133922_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\client\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\servicioregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.CORE.DOMAIN\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.persistence\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\dashboardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E492327D-7F72-46EC-A255-E0C97E64276A}|NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.shared\\netbacking.infraestructure.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E492327D-7F72-46EC-A255-E0C97E64276A}|NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj|solutionrelative:netbacking.infraestructure.shared\\netbacking.infraestructure.shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\seeds\\defaultclientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultclientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\interfaces\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\interfaces\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.presentation.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\seeds\\defaultadminuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.infraestructure.identity\\netbacking.infraestructure.identity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F1678132-AEFE-41D2-9087-218BC368E11B}|NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj|solutionrelative:netbacking.infraestructure.identity\\netbacking.infraestructure.identity.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.application\\netbacking.core.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\netbacking.core.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|c:\\users\\rodri\\onedrive\\escritorio\\netbacking.net\\netbacking.core.domain\\entities\\cashadvance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23AB8343-4131-44DB-BB2F-78D135D81670}|NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj|solutionrelative:netbacking.core.domain\\entities\\cashadvance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -205,17 +301,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "ServicioRegistration.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\ServicioRegistration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T14:04:42.83Z",
               "IsPinned": true,
@@ -224,14 +320,356 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DashBoardRepository.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAvAAAAAAAAAA==",
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:42:28.314Z",
+              "WhenOpened": "2024-11-01T00:08:21.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
+              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:06:00.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
+              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:06:20.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Beneficiary.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
+              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:05:28.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:15:59.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServicioRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T14:04:56.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-05T01:43:50.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACwAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T18:34:47.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:53:17.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241105013556_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013556_InitialCreate.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:35:56.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAAG4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T18:35:12.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20241105013337_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013337_InitialCreate.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:33:37.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20241105013138_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105013138_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:31:38.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20241105012409_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105012409_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:24:09.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20241105012332_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105012332_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:23:32.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T01:43:24.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20241105011507_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105011507_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:15:07.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T17:53:48.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:08:24.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20241105010229_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105010229_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:02:29.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:33:00.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20241105004938_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004938_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:49:38.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20241105004914_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004914_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:49:14.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20241105004711_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105004711_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:47:11.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20241105004643_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105004643_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:46:43.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20241105003651_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105003651_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:36:51.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20241105003546_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105003546_InitialMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:35:46.577Z",
               "EditorCaption": ""
             },
             {
@@ -240,284 +678,331 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T18:36:32.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwEEAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "DashBoardRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\DashBoardRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:53:17.806Z",
+              "WhenOpened": "2024-11-04T18:42:28.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T23:49:35.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20241105002733_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105002733_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:27:33.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20241105001912_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241105001912_InitialIdentityMigration.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:19:12.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241105001835_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105001835_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:18:35.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "NETBACKING.INFRAESTRUCTURE.SHARED",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T00:07:35.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20241105000039_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241105000039_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:00:39.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20241104235958_InitialIdentityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241104235958_InitialIdentityMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:59:58.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20241104234931_Update.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234931_Update.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:49:32.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20241104234522_Update.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234522_Update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:45:22.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20241104234450_Update.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234450_Update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:44:50.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20241104234315_Update.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104234315_Update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:43:15.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20241104220357_UpdateRelationProductAndUser.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220357_UpdateRelationProductAndUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:03:57.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20241104220204_UpdateRelationProductAndUser.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241104220204_UpdateRelationProductAndUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T22:02:04.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "CreateUser.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
               "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
               "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\CreateUser.cshtml",
               "ViewState": "AgIAAAsAAAAAAAAAAAAwwDQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T18:18:03.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:18:03.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:15:59.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Entities\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:43:24.126Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IdentityContext.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Context\\IdentityContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T00:08:21.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 42,
               "Title": "DefaultClientUser.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultClientUser.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:07:41.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T14:07:41.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 43,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T18:36:32.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Interfaces\\Services\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:17:19.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:17:19.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IdentityContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\IdentityContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:07:47.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 45,
               "Title": "EditUserDto.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:25:23.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:25:23.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ClientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:33:00.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Client\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T18:34:47.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T18:35:12.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 44,
               "Title": "Users.cshtml",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
               "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
               "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T18:35:24.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:35:24.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 51,
               "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Interfaces\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:08:45.872Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:08:45.872Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 47,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAGwAAAAAAAAAAAAhwHwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:58:05.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T17:58:05.448Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 53,
               "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Models\\UserModel.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:55:30.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T17:55:30.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 46,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Services\\UserService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIA7wCgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:54:55.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T17:54:55.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T17:53:48.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 52,
               "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Services\\AccountService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAmwBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T18:00:48.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T18:00:48.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 49,
               "Title": "DefaultRoles.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:07:40.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T14:07:40.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 54,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
               "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
               "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\appsettings.json",
               "ViewState": "AgIAAAEAAAAAAAAAAAAYwAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -525,24 +1010,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Program.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwDgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T23:49:35.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 55,
               "Title": "DefaultAdminUser.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Seeds\\DefaultAdminUser.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwBwAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -550,59 +1022,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AppDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:04:07.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "20241101014240_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014240_InitialMigration.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEIAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:42:40.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20241103213212_dfk.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241103213212_dfk.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T21:32:12.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ServicioRegistration.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\ServicioRegistration.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:04:56.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 58,
               "Title": "CashAdvance.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
               "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
               "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\CashAdvance.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAewCMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -610,240 +1034,182 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Beneficiary.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
-              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Beneficiary.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:05:28.585Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
-              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Product.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:06:00.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 57,
               "Title": "NETBACKING.CORE.APPLICATION.csproj",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
               "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
               "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-31T23:48:59.523Z"
+              "WhenOpened": "2024-10-31T23:48:59.523Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 56,
               "Title": "NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+              "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
               "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+              "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
               "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-01T00:18:40.352Z"
+              "WhenOpened": "2024-11-01T00:18:40.352Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Transaction.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
-              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\Transaction.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:06:20.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 72,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
               "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
-              "RelativeToolTip": "NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Programacion 3\\NETBACKING\\NETBACKING.CORE.DOMAIN\\Entities\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:06:31.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20241101014421_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101014421_InitialMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T01:44:21.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20241103133922_login.cs",
-              "DocumentMoniker": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
-              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
-              "ToolTip": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
-              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241103133922_login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T13:39:22.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 60,
               "Title": "20241101013651_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013651_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:36:51.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 59,
               "Title": "20241101014149_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101014149_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:41:49.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 61,
               "Title": "20241101013455_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013455_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:34:56.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 62,
               "Title": "20241101013333_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013333_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:33:33.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 63,
               "Title": "20241101013224_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101013224_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:32:24.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 64,
               "Title": "20241101011854_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011854_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:18:54.85Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 65,
               "Title": "20241101011625_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011625_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:16:25.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 66,
               "Title": "20241101011418_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101011418_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:14:18.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 67,
               "Title": "20241101010725_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010725_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:07:25.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 68,
               "Title": "20241101010415_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Migrations\\20241101010415_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T01:04:15.328Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 69,
               "Title": "20241101003537_InitialMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101003537_InitialMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T00:35:37.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 70,
               "Title": "20241101002131_InicialIdentityMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101002131_InicialIdentityMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T00:21:31.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 71,
               "Title": "20241101001029_InicialIdentityMigration.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
-              "RelativeDocumentMoniker": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
               "ToolTip": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
-              "RelativeToolTip": "..\\..\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.IDENTITY\\Migrations\\20241101001029_InicialIdentityMigration.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-01T00:10:29.414Z"
             }

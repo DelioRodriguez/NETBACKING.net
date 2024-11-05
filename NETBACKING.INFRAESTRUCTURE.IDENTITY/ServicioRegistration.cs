@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NETBACKING.CORE.APPLICATION.Interfaces.Services;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
@@ -12,8 +11,8 @@ public static class ServicioRegistration
 {
     public static void AddIdentityInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-       
-        
+
+
         if (configuration.GetValue<bool>("UseInMemoryDatabase"))
         {
             services.AddDbContext<IdentityContext>(options =>
@@ -30,7 +29,7 @@ public static class ServicioRegistration
                     mbox => mbox.MigrationsAssembly(typeof(IdentityContext).Assembly.FullName));
             });
         }
-        
+
         services.AddIdentityCore<ApplicationUser>()
             .AddRoles<IdentityRole>()
             .AddSignInManager()

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using NETBACKING.CORE.DOMAIN.Entities;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
 namespace NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;

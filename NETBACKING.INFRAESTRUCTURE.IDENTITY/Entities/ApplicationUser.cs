@@ -13,5 +13,4 @@ public class ApplicationUser : IdentityUser
     [Column(TypeName = "decimal(18, 2)")]
     public decimal InitialAmount { get; set; }
 
-    public virtual ICollection<Product> Products { get; set; }
 }

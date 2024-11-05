@@ -1,0 +1,60 @@
+﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Products.ProductViewModel>
+
+@{
+ViewData["Title"] = "Lista de Productos";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Productos del Cliente</h2>
+
+    <div class="row">
+        @if (Model == null || !Model.Any())
+        {
+            <p>No hay productos disponibles.</p>
+            <a href="/Account/Logout" class="btn btn-logout">Cerrar Sesión</a>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var product in Model)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">@product.ProductType</h5>
+                                <p class="card-text">
+                                    <strong>ID:</strong> @product.UniqueIdentifier <br />
+                                    <strong>Principal:</strong> @(product.IsPrimary ? "Sí" : "No")
+                                </p>
+                                @if (product.ProductType == "Cuenta de ahorro")
+                                {
+                                    <p class="card-text">
+                                        <strong>Balance:</strong> $@product.Balance
+                                    </p>
+                                }
+                                else if (product.ProductType == "Tarjeta de credito")
+                                {
+                                    <p class="card-text">
+                                        <strong>Deuda:</strong> $@product.Balance <br />
+                                        <strong>Límite de Crédito:</strong> $@product.CreditLimit
+                                    </p>
+                                }
+                                else if (product.ProductType == "Prestamo")
+                                {
+                                    <p class="card-text">
+                                        <strong>Monto del Préstamo:</strong> $@product.LoanAmount <br />
+                                        <strong>Deuda Actual:</strong> $@product.Balance
+                                    </p>
+                                }
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                <small>@(product.IsPrimary ? "Producto Principal" : "Producto Secundario")</small>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+    </div>
+</div>

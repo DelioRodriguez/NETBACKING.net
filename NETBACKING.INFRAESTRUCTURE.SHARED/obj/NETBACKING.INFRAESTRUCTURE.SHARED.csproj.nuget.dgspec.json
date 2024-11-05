@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {}
+    "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {}
   },
   "projects": {
-    "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
+    "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+        "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
         "projectName": "NETBACKING.INFRAESTRUCTURE.SHARED",
-        "projectPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Programacion 3\\NETBACKING\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
+        "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,9 @@
+﻿using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Generic;
+using NETBACKING.CORE.DOMAIN.Entities;
+
+namespace NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
+
+public interface IProductRepository : IRepository<Product>
+{
+    Task<List<Product>> GetByUserIdAsync(string userId);
+}

@@ -1,4 +1,3 @@
-C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\appsettings.json
 C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.staticwebassets.runtime.json
 C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.exe
@@ -329,3 +328,4 @@ C:\Programacion 3\NETBACKING\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NET
 C:\Programacion 3\NETBACKING\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.genruntimeconfig.cache
 C:\Programacion 3\NETBACKING\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\ref\NETBACKING.PRESENTATION.WEBAPP.dll
 C:\Programacion 3\NETBACKING\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\appsettings.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\AutoMapper.dll

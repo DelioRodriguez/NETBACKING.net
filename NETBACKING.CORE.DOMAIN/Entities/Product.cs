@@ -31,10 +31,6 @@ namespace NETBACKING.CORE.DOMAIN.Entities
         [Range(0, double.MaxValue, ErrorMessage = "El monto del préstamo debe ser mayor o igual a cero.")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal LoanAmount { get; set; }
-
-        [ForeignKey("User")]
-        public int UserId { get; set; }
-
-     
+        public string ApplicationUserId  { get; set; }
     }
 }

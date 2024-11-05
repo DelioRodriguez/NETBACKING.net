@@ -19,6 +19,17 @@
           "NETBACKING.PRESENTATION.WEBAPP.dll": {}
         }
       },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "9.0.0-rc.2.24473.5"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
@@ -1034,22 +1045,17 @@
       },
       "NETBACKING.CORE.APPLICATION/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0-rc.2.24473.5",
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.CORE.APPLICATION.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.CORE.APPLICATION.dll": {}
         }
       },
       "NETBACKING.CORE.DOMAIN/1.0.0": {
         "runtime": {
-          "NETBACKING.CORE.DOMAIN.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.CORE.DOMAIN.dll": {}
         }
       },
       "NETBACKING.INFRAESTRUCTURE.IDENTITY/1.0.0": {
@@ -1065,10 +1071,7 @@
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {}
         }
       },
       "NETBACKING.INFRAESTRUCTURE.PERSISTENCE/1.0.0": {
@@ -1082,18 +1085,12 @@
           "NETBACKING.INFRAESTRUCTURE.IDENTITY": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.PERSISTENCE.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.INFRAESTRUCTURE.PERSISTENCE.dll": {}
         }
       },
       "NETBACKING.INFRAESTRUCTURE.SHARED/1.0.0": {
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.SHARED.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.INFRAESTRUCTURE.SHARED.dll": {}
         }
       }
     }
@@ -1103,6 +1100,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",

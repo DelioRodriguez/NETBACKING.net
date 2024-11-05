@@ -1,4 +1,5 @@
 ﻿using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
+using NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
@@ -6,10 +7,12 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
     public class DashBoardRepository : IDashBoardRepository
     {
         private readonly AppDbContext _context;
+        private readonly IdentityContext identityContext;
 
-        public DashBoardRepository(AppDbContext context)
+        public DashBoardRepository(AppDbContext context, IdentityContext context1)
         {
             _context = context;
+            this.identityContext = context1;
         }
         public int GetTotalTransactions()
         {
@@ -33,17 +36,17 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
 
         public int GetActiveCustomers()
         {
-            return _context.Users.Count(u => u.IsActive);
+            return identityContext.Users.Count(u => u.IsActive);
         }
 
         public int GetInactiveCustomers()
         {
-            return _context.Users.Count(u => !u.IsActive);
+            return identityContext.Users.Count(u => !u.IsActive);
         }
 
         public int GetAssignedProducts()
         {
-            return _context.Products.Count(p => p.UserId != null);
+            return _context.Products.Count(p => p.ApplicationUserId != null);
         }
     }
 }
