@@ -19,6 +19,12 @@ public class ProductRepository : Repository<Product>, IProductRepository
     {
         return await _context.Products
             .Where(p => p.ApplicationUserId == userId)
-            .ToListAsync();;
+            .ToListAsync();
+    }
+
+    public async Task<Product?> GetProductByIdentificador(string identificador)
+    {
+        return await _context.Products
+            .FirstOrDefaultAsync(p => p.UniqueIdentifier == identificador)!;
     }
 }

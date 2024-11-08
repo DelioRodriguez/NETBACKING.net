@@ -1,0 +1,23 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace NETBACKING.CORE.APPLICATION.ViewModels.Beneficiary;
+
+public class BeneficiaryViewModel
+{
+    public int Id { get; set; }
+
+    [Required]
+    [MaxLength(50, ErrorMessage = "El nombre no puede exceder los 50 caracteres.")]
+    public string FirstName { get; set; }
+
+    [Required]
+    [MaxLength(50, ErrorMessage = "El apellido no puede exceder los 50 caracteres.")]
+    public string LastName { get; set; }
+
+    [Required]
+    [StringLength(9, MinimumLength = 9, ErrorMessage = "El número de cuenta debe tener exactamente 9 dígitos.")]
+    public string AccountNumber { get; set; }
+
+        
+    public string? ApplicationUserId { get; set; }
+}

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NETBACKING.CORE.DOMAIN.Entities;
-using NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
@@ -25,6 +24,12 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<ApplicationUser>().Metadata.SetIsTableExcludedFromMigrations(true);
 
         modelBuilder.Entity<Product>()
+            .HasOne<ApplicationUser>()
+            .WithMany()
+            .HasForeignKey(p => p.ApplicationUserId)
+            .OnDelete(DeleteBehavior.NoAction);
+        
+        modelBuilder.Entity<Beneficiary>()
             .HasOne<ApplicationUser>()
             .WithMany()
             .HasForeignKey(p => p.ApplicationUserId)

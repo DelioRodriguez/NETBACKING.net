@@ -1,0 +1,95 @@
+﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Beneficiary.BeneficiaryViewModel>
+
+@{
+ViewData["Title"] = "Lista de Beneficiarios";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Beneficiarios del Cliente</h2>
+    
+    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addBeneficiaryModal">Agregar Beneficiario</button>
+
+    <div class="row">
+        @if (TempData["SuccessMessage"] != null)
+            {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+        }
+        
+            <div class="row">
+                @foreach (var beneficiary in Model)
+                {
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card shadow-sm h-100">
+                            <form id="deleteForm_@beneficiary.Id" action="@Url.Action("DeleteBeneficiary", "Beneficiary")" method="post" class="position-absolute top-0 end-0 m-2">
+                                <button type="button" class="btn btn-link p-0" title="Eliminar" onclick="confirmDelete(@beneficiary.Id)">
+                                    <img src="/Icons/borrar.png" alt="Eliminar" style="width: 20px; height: 20px;" />
+                                </button>
+                                <input type="hidden" name="id" value="@beneficiary.Id" />
+                            </form>
+                            <div class="card-body">
+                                <h5 class="card-title">@beneficiary.FirstName @beneficiary.LastName</h5>
+                                <p class="card-text">
+                                    <strong>Número de Cuenta:</strong> @beneficiary.AccountNumber <br/>
+                                </p>
+                            </div>
+                            <div class="card-footer text-muted text-center">
+                                <small>Información del Beneficiario</small>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        
+    </div>
+</div>
+
+<!-- Modal para agregar beneficiario -->
+<div class="modal fade" id="addBeneficiaryModal" tabindex="-1" aria-labelledby="addBeneficiaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addBeneficiaryModalLabel">Agregar Beneficiario</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form id="addBeneficiaryForm" action="/Beneficiary/Beneficiaries" method="post">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="accountNumber" class="form-label">Número de Cuenta</label>
+                        <input type="text" class="form-control" id="accountNumber" name="idCuenta" required />
+                        <div id="accountNumberError" class="text-danger" style="display:none;">El número de cuenta no existe.</div>
+                    </div>
+                </div>
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#addBeneficiaryForm').on('submit', function (e) {
+        e.preventDefault();
+
+        if ($(this).valid()) {
+            $('#addBeneficiaryModal').modal('hide');
+
+            this.submit();
+        }
+    });
+</script>
+
+
+
+

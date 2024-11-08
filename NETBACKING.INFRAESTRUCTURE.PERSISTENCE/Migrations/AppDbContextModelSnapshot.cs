@@ -35,6 +35,10 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Migrations
                         .HasMaxLength(9)
                         .HasColumnType("nvarchar(9)");
 
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -45,10 +49,9 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Beneficiaries");
                 });
@@ -231,6 +234,15 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Migrations
                         {
                             t.ExcludeFromMigrations();
                         });
+                });
+
+            modelBuilder.Entity("NETBACKING.CORE.DOMAIN.Entities.Beneficiary", b =>
+                {
+                    b.HasOne("NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("NETBACKING.CORE.DOMAIN.Entities.CashAdvance", b =>

@@ -20,9 +20,7 @@ namespace NETBACKING.CORE.DOMAIN.Entities
         [StringLength(9, MinimumLength = 9, ErrorMessage = "El número de cuenta debe tener exactamente 9 dígitos.")]
         public string AccountNumber { get; set; }
 
-        [ForeignKey("User")]
-        public int UserId { get; set; }
-
         
+        public string ApplicationUserId { get; set; }
     }
 }
