@@ -8,10 +8,9 @@ ViewData["Title"] = "Lista de Productos";
     <h2 class="text-center mb-4">Productos del Cliente</h2>
 
     <div class="row">
-        @if (Model == null || !Model.Any())
+        @if (!Model.Any())
         {
             <p>No hay productos disponibles.</p>
-            <a href="/Account/Logout" class="btn btn-logout">Cerrar Sesión</a>
         }
         else
         {
@@ -22,14 +21,14 @@ ViewData["Title"] = "Lista de Productos";
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
                                 <h5 class="card-title">@product.ProductType</h5>
-                                @if (product.ProductType == "Cuenta Corriente")
+                                @if (product.ProductType == "CuentaAhorro")
                                 {
                                     <p class="card-text">
                                         <strong>ID:</strong> @product.UniqueIdentifier <br />
                                         <strong>Balance:</strong> $@product.Balance
                                     </p>
                                 }
-                                else if (product.ProductType == "Tarjeta de Crédito")
+                                else if (product.ProductType == "tarjetacredito")
                                 {
                                     <p class="card-text">
                                         <strong>ID:</strong> @product.UniqueIdentifier <br />
@@ -37,7 +36,7 @@ ViewData["Title"] = "Lista de Productos";
                                         <strong>Límite de Crédito:</strong> $@product.CreditLimit
                                     </p>
                                 }
-                                else if (product.ProductType == "Préstamo")
+                                else if (product.ProductType == "Prestamo")
                                 {
                                     <p class="card-text">
                                         <strong>ID Prestamo:</strong> @product.UniqueIdentifier <br />

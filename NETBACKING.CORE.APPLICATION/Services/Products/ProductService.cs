@@ -85,18 +85,18 @@ public class ProductService : Service<Product>, IProductService
 
     public async Task<IEnumerable<ProductViewModel>> GetProductsByCreditCard(string? userId)
     {
-       return _mapper.Map<IEnumerable<ProductViewModel>>( await _productRepository.GetProductsByCardUser("Tarjeta de Crédito", userId));
+       return _mapper.Map<IEnumerable<ProductViewModel>>( await _productRepository.GetProductsByCardUser("tarjetacredito", userId));
     }
 
     public async Task<IEnumerable<ProductViewModel>> GetProductsBycurrentCard(string? userId)
     {
         return _mapper.Map<IEnumerable<ProductViewModel>>(
-            await _productRepository.GetProductsByCardUser("Cuenta Corriente", userId));
+            await _productRepository.GetProductsByCardUser("CuentaAhorro", userId));
     }
 
     public async Task<IEnumerable<ProductViewModel>> GetProductsByLoan(string? userId)
     {
         return _mapper.Map<IEnumerable<ProductViewModel>>(
-            await _productRepository.GetProductsByCardUser("Préstamo", userId));
+            await _productRepository.GetProductsByCardUser("Prestamo", userId));
     }
 }
