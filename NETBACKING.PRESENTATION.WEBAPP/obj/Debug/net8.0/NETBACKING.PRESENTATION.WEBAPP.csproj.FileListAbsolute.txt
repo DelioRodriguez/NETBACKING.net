@@ -818,3 +818,12 @@ C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.PRESENTATION.WEBAPP\obj\Deb
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.pdb
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.genruntimeconfig.cache
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\ref\NETBACKING.PRESENTATION.WEBAPP.dll
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\appsettings.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.staticwebassets.runtime.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.exe
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.deps.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.runtimeconfig.json
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\bin\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.pdb
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NETBACKI.18746023.Up2Date
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\NETBACKING.PRESENTATION.WEBAPP.genruntimeconfig.cache
+C:\Users\rodri\OneDrive\Escritorio\NETBACKING.net\NETBACKING.PRESENTATION.WEBAPP\obj\Debug\net8.0\ref\NETBACKING.PRESENTATION.WEBAPP.dll

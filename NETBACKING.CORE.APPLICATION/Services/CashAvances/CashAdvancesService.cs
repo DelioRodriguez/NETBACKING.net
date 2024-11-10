@@ -36,10 +36,16 @@ namespace NETBACKING.CORE.APPLICATION.Services.CashAvances
                 Date = DateTime.Now
             };
 
-            creditCard.Balance += amount + interest;
-            destinationAccount.Balance += amount;
+            if (creditCard.Balance is null)
+            {
+                creditCard.Balance = 0;
+            }
+            
+             if (creditCard.Balance <= creditCard.CreditLimit){
 
-            if (creditCard.Balance <= creditCard.CreditLimit){
+
+                creditCard.Balance += amount + interest;
+                destinationAccount.Balance += amount;
 
                 await _cashAdvancesRepository.AddAsync(cashAdvance);
                 await _productRepository.UpdateAsync(creditCard);

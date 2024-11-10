@@ -41,8 +41,22 @@ public class LoanService : Service<Transaction>, ILoanService
         
         if (credit != null)
         {
-            original.Balance -= paymentAmount;
-            credit.LoanAmount -= paymentAmount;
+            if (paymentAmount > credit.LoanAmount)
+            {
+                decimal? restante = paymentAmount - credit.LoanAmount;
+                
+                credit.LoanAmount = 0;
+                
+                original.Balance -= paymentAmount;
+                
+                original.Balance += restante;
+            }
+            else
+            {
+                original.Balance -= paymentAmount;
+                credit.LoanAmount -= paymentAmount;
+            }
+            
 
             await _productRepository.UpdateAsync(original);
             await _productRepository.UpdateAsync(credit);

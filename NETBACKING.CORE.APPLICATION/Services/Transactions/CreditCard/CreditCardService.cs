@@ -20,17 +20,7 @@ public class CreditCardService : Service<Transaction>, ICreditCardService
         var credit = await _productRepository.GetProductByIdentificador(creditCard);
         var original = await _productRepository.GetProductByIdentificador(originAccount);
 
-        if (original!.Balance <= paymentAmount)
-        {
-            return false;
-        }
-        
-        if (credit!.Balance < paymentAmount)
-        {
-
-            return false;
-        }
-
+      
         var transaction = new Transaction
         {
             Date = DateTime.Now,
@@ -42,8 +32,21 @@ public class CreditCardService : Service<Transaction>, ICreditCardService
             DestinationAccount = credit
         };
         
-        original.Balance -= paymentAmount;
-        credit.Balance -= paymentAmount;
+        if (paymentAmount > credit.Balance)
+        {
+            decimal? restante = paymentAmount - credit.Balance;
+                
+            credit.Balance = 0;
+                
+            original.Balance -= paymentAmount;
+                
+            original.Balance += restante;
+        }
+        else
+        {
+            original.Balance -= paymentAmount;
+            credit.Balance -= paymentAmount;
+        }
 
         await _productRepository.UpdateAsync(original);
         await _productRepository.UpdateAsync(credit);
