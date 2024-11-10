@@ -20,6 +20,18 @@ public class BeneficiaryRepository : Repository<Beneficiary>, IBeneficiaryReposi
         return await _context.Beneficiaries
             .AnyAsync(b => b.AccountNumber == idCuenta);
     }
+    
+    public async Task<Beneficiary?> GetBeneficiaryByIdCuentaAsync(string idCuenta)
+    {
+        return await _context.Beneficiaries
+            .FirstOrDefaultAsync(b => b.AccountNumber == idCuenta);
+    }
+
+    public async Task<Beneficiary?> GetByUserIdAndAccountNumberAsync(string? userId, string accountNumber)
+    {
+        return await _context.Beneficiaries
+            .FirstOrDefaultAsync(b => b.ApplicationUserId == userId && b.AccountNumber == accountNumber);
+    }
 
     public  async Task<List<Beneficiary>> GetByIdUserAsyncModel(string? id)
     {

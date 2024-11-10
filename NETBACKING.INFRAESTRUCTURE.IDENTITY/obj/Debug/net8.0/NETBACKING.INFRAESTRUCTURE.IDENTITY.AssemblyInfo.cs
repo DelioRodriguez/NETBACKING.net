@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NETBACKING.INFRAESTRUCTURE.IDENTITY")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0266e472e95320d2c64230f27dff1c4a404ccaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29c6751b8d7a1b32007c7194337a1840059f9dd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("NETBACKING.INFRAESTRUCTURE.IDENTITY")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NETBACKING.INFRAESTRUCTURE.IDENTITY")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

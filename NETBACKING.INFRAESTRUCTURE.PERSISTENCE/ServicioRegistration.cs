@@ -5,11 +5,19 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Beneficiarys;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Generic;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.CreditCard;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Express;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Loan;
+using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.Express;
+using NETBACKING.CORE.APPLICATION.Services.Transactions.CreditCard;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Beneficiarys;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Generic;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Products;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.CreditCard;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Express;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Loan;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
 {
@@ -21,6 +29,9 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
             services.AddScoped<IDashBoardRepository, DashBoardRepository>();
             services.AddScoped<IBeneficiaryRepository, BeneficiaryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IExpressRepository, ExpressRepository>();
+            services.AddScoped<ICreditCardRepository, CreditCardRepository>();
+            services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))

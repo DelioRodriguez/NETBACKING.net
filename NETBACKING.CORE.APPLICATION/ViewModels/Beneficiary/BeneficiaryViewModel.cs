@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using NETBACKING.CORE.APPLICATION.ViewModels.Products;
 
 namespace NETBACKING.CORE.APPLICATION.ViewModels.Beneficiary;
 
@@ -17,7 +18,8 @@ public class BeneficiaryViewModel
     [Required]
     [StringLength(9, MinimumLength = 9, ErrorMessage = "El número de cuenta debe tener exactamente 9 dígitos.")]
     public string AccountNumber { get; set; }
-
-        
     public string? ApplicationUserId { get; set; }
+    
+    
+    public List<ProductViewModel>? Current { get; set; }
 }

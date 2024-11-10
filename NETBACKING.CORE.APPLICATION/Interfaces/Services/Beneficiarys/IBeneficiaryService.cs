@@ -7,5 +7,7 @@ namespace NETBACKING.CORE.APPLICATION.Interfaces.Services.Beneficiarys;
 public interface IBeneficiaryService : IService<Beneficiary>
 {
     Task<List<BeneficiaryViewModel>> GetByIdUserAsyncModel(string? id);
-    Task AddAsyncByModel(string idCuenta);
+    Task AddAsyncByModel(string idCuenta, string? idUser);
+    Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAsync(string idCuenta);
+    
 }

@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using NETBACKING.CORE.APPLICATION.DTOs;
 using NETBACKING.CORE.APPLICATION.Enums;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
-using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 using NETBACKING.CORE.APPLICATION.Models;
+using NETBACKING.CORE.APPLICATION.ViewModels.Products;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
@@ -152,16 +152,13 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
                 throw new InvalidOperationException("Error assigning role: " + string.Join(", ", roleResult.Errors.Select(e => e.Description)));
             }
 
-            // Si el rol es 'Client', crear la cuenta de ahorro
             if (parsedRole == Roles.Client)
             {
                 var savingsAccount = _mapper.Map<ProductCreateViewModel>(userDto);
 
-                // Asegurar que ApplicationUserId esté asignado
-                savingsAccount.ApplicationUserId = user.Id;  // Asignar el Id generado
+                savingsAccount.ApplicationUserId = user.Id; 
                 savingsAccount.Balance = userDto.InitialAmount ?? 0;
 
-                // Verificar que ApplicationUserId no sea nulo
                 if (string.IsNullOrEmpty(savingsAccount.ApplicationUserId))
                 {
                     throw new InvalidOperationException("ApplicationUserId cannot be null when creating a product.");

@@ -1,0 +1,69 @@
+﻿@model NETBACKING.CORE.APPLICATION.ViewModels.Payments.CreditCard.CombinedCardViewModel
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Pago de Tarjeta de Crédito</h2>
+
+    <form method="post" asp-action="IndexCreditCard" asp-controller="CreditCard" id="creditCardPaymentForm">
+        <div class="mb-3">
+            <label for="creditCard" class="form-label">Tarjeta de Crédito</label>
+            <select class="form-select" id="creditCard" name="creditCard" required>
+                <option selected disabled value="">Seleccione una tarjeta de crédito</option>
+                
+                @foreach (var card in Model.CreditCards)
+                {
+                        <option value="@card.UniqueIdentifier" data-debt="@card.Balance">Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="originAccount" class="form-label">Cuenta de Origen</label>
+            <select class="form-select" id="originAccount" name="originAccount" required>
+                <option selected disabled value="">Seleccione una cuenta</option>
+                @foreach (var card in Model.Current)
+                {
+                <option value="@card.UniqueIdentifier" data-debt="@card.Balance">Cuenta @card.UniqueIdentifier - Balance: @card.Balance</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="paymentAmount" class="form-label">Monto a Pagar</label>
+            <input type="number" class="form-control" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="confirmPayCredit()">Realizar Pago</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script>
+        @if (TempData["SuccessMessage"] != null)
+        {
+        <text>
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+        <text>
+        Swal.fire({
+            icon: 'error',
+            title: '¡Error!',
+            text: '@TempData["ErrorMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+
+    </script>
+</div>

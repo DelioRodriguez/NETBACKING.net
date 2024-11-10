@@ -21,6 +21,6 @@ namespace NETBACKING.CORE.DOMAIN.Entities
         public string AccountNumber { get; set; }
 
         
-        public string ApplicationUserId { get; set; }
+        public string? ApplicationUserId { get; set; }
     }
 }

@@ -16,11 +16,11 @@ namespace NETBACKING.CORE.DOMAIN.Entities
         [StringLength(9, MinimumLength = 9, ErrorMessage = "El identificador único debe tener exactamente 9 caracteres.")]
         public string UniqueIdentifier { get; set; }
 
-       
+     
         [Range(0, double.MaxValue, ErrorMessage = "El balance debe ser mayor o igual a cero.")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal? Balance { get; set; }
-        
+
         [Required]
         public bool IsPrimary { get; set; }
 

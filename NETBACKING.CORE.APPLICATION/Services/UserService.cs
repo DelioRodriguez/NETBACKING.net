@@ -52,7 +52,6 @@ namespace NETBACKING.CORE.APPLICATION.Services
         
             var userModel = _mapper.Map<UserModel>(userDto);
 
-            // Actualiza el usuario en el repositorio
             await _userRepository.UpdateUserAsync(userModel);
         }
 
