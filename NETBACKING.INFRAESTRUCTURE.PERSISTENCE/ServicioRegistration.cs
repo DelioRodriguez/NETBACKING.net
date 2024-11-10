@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Beneficiarys;
-using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.CashAdvances;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.CashAvance;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Generic;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.CreditCard;
