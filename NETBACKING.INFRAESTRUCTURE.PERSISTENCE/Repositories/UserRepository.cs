@@ -167,7 +167,6 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
                     throw new InvalidOperationException("ApplicationUserId cannot be null when creating a product.");
                 }
 
-                // Crear el producto (cuenta de ahorro)
                 await _productService.CreateProduct(savingsAccount);
             }
         }
