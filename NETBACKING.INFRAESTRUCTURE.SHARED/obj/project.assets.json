@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dayne\\.nuget\\packages\\": {}
+    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+      "projectUniqueName": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
       "projectName": "NETBACKING.INFRAESTRUCTURE.SHARED",
-      "projectPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
-      "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
-      "outputPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
+      "projectPath": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+      "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

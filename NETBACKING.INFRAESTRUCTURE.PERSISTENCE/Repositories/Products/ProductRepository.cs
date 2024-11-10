@@ -15,11 +15,27 @@ public class ProductRepository : Repository<Product>, IProductRepository
         this._context = context;
     }
 
+    public  async Task<Product> GetPrimaryAccount(string userId)
+    {
+        return await _context.Products
+            .FirstOrDefaultAsync(p => p.ApplicationUserId == userId && p.IsPrimary);
+    }
+
     public async Task<List<Product>> GetByUserIdAsync(string? userId)
     {
         return await _context.Products
             .Where(p => p.ApplicationUserId == userId)
             .ToListAsync();
+    }
+
+    public async Task DeleteAsync(string productId)
+    {
+        var product = await _context.Products.FirstOrDefaultAsync(p => p.UniqueIdentifier == productId);
+        if (product != null)
+        {
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+        }
     }
 
     public async Task<Product?> GetProductByIdentificador(string identificador)

@@ -7,7 +7,8 @@ namespace NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 public interface IProductService : IService<Product>
 {  
     Task CreateProduct(ProductCreateViewModel productViewModel);
-    Task<Product> CreateProductofficial(ProductViewModel productViewModel);
+    Task TransferToPrimaryAccount(string userId, decimal amount);
+    Task DeleteProduct(string productId);
     Task<IEnumerable<ProductViewModel>> GetAllProductsByModel(string? userId);
     Task<ProductViewModel?> GetProductByIdentificador(string identificador);
     Task<IEnumerable<ProductViewModel>> GetProductsByCreditCard(string? userId);

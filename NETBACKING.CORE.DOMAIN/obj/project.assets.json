@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dayne\\.nuget\\packages\\": {}
+    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+      "projectUniqueName": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
       "projectName": "NETBACKING.CORE.DOMAIN",
-      "projectPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
-      "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
-      "outputPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\obj\\",
+      "projectPath": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+      "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+      "outputPath": "C:\\Programacion 3\\ApiRestaurant\\NetBackin\\NETBACKING.CORE.DOMAIN\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
