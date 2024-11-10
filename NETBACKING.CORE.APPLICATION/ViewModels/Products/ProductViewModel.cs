@@ -28,7 +28,7 @@ public class ProductViewModel
 
     [Range(0, double.MaxValue, ErrorMessage = "El monto del préstamo debe ser mayor o igual a cero.")]
     public decimal LoanAmount { get; set; }
-    public string ApplicationUserId  { get; set; }
+    public string? ApplicationUserId  { get; set; }
     
     [NotMapped]
     public decimal Debt

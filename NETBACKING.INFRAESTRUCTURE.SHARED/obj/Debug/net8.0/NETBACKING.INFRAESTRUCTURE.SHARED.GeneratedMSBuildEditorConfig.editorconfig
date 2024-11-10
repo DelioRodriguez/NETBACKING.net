@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NETBACKING.INFRAESTRUCTURE.SHARED
-build_property.ProjectDir = C:\NetBanking\NETBACKING.INFRAESTRUCTURE.SHARED\
+build_property.ProjectDir = C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.INFRAESTRUCTURE.SHARED\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

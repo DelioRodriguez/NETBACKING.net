@@ -2,7 +2,7 @@
 @using NETBACKING.CORE.APPLICATION.Enums
 
 @{
-    ViewData["Title"] = "Listado de Usuarios";
+ViewData["Title"] = "Listado de Usuarios";
 }
 
 <h1 class="text-center my-4 text-primary">@ViewData["Title"]</h1>
@@ -19,63 +19,117 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row" id="userList">
-                @foreach (var user in Model)
-                {
-                    <div class="col-md-6 col-lg-4 mb-4 user-card" data-id="@user.Identification">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="card-title mb-2 text-dark">@user.FirstName @user.LastName</h5>
-                                    <!-- Switch para Activar/Desactivar Usuario -->
-                                    <form asp-action="ToggleUserStatus" asp-route-id="@user.Id" method="post" class="d-inline">
-                                        <label class="switch">
-                                            <input type="checkbox" id="toggleStatus-@user.Id" @(user.IsActive ? "checked" : "") onchange="this.form.submit();" />
-                                            <span class="slider"></span>
-                                        </label>
-                                    </form>
-                                </div>
-
-                                <p class="card-subtitle text-muted">@user.Role</p>
-                                <hr>
-                                <p class="card-text">
-                                    <strong>Cédula:</strong> @user.Identification <br>
-                                    <strong>Correo:</strong> @user.Email <br>
-                                    <strong>Usuario:</strong> @user.UserName
-                                </p>
-
-                                <!-- Estado del Usuario al final en pequeño -->
-                                <div class="user-status text-muted" style="font-size: 0.85rem;">
-                                    @if (user.IsActive)
-                                    {
-                                        <span class="text-success">Estado: Activo</span>
-                                    }
-                                    else
-                                    {
-                                        <span class="text-danger">Estado: Inactivo</span>
-                                    }
-                                </div>
-
-                                <div class="mt-3">
-                                    <a class="btn btn-outline-primary btn-sm me-2" asp-action="EditUser" asp-route-id="@user.Id">Editar</a>
-                                    @if (user.Role != "Admin")
-                                    {
-                                        <a class="btn btn-outline-info btn-sm me-2" asp-action="AddProduct" asp-route-id="@user.Id">Agregar Producto</a>
-                                    }
-                                </div>
-                            </div>
-                        </div>
+    <div class="row" id="userList">
+        @foreach (var user in Model)
+        {
+        <div class="col-md-6 col-lg-4 mb-4 user-card" data-id="@user.Identification">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-2 text-dark">@user.FirstName @user.LastName</h5>
+                        <!-- Switch para Activar/Desactivar Usuario -->
+                        <form asp-action="ToggleUserStatus" asp-route-id="@user.Id" method="post" id="toggleForm-@user.Id" class="d-inline">
+                            <label class="switch">
+                                <input type="checkbox" id="toggleStatus-@user.Id" @(user.IsActive ? "checked" : "") onclick="handleSwitchClick('@user.Id', this)" />
+                                <span class="slider"></span>
+                            </label>
+                        </form>
                     </div>
-                }
+
+                    <p class="card-subtitle text-muted">@user.Role</p>
+                    <hr>
+                    <p class="card-text">
+                        <strong>Cédula:</strong> @user.Identification <br>
+                        <strong>Correo:</strong> @user.Email <br>
+                        <strong>Usuario:</strong> @user.UserName
+                    </p>
+
+                    <!-- Estado del Usuario al final en pequeño -->
+                    <div class="user-status text-muted" style="font-size: 0.85rem;">
+                        @if (user.IsActive)
+                        {
+                        <span class="text-success">Estado: Activo</span>
+                        }
+                        else
+                        {
+                        <span class="text-danger">Estado: Inactivo</span>
+                        }
+                    </div>
+
+                    <!-- Botones de acción -->
+                    <div class="mt-3">
+                        <a class="btn btn-outline-primary btn-sm me-2" asp-action="EditUser" asp-route-id="@user.Id">Editar</a>
+
+                        <!-- Mostrar "Gestionar Productos" solo si el usuario no es Admin -->
+                        @if (user.Role != "Admin")
+                        {
+                        <a class="btn btn-outline-info btn-sm me-2" asp-controller="Product" asp-action="Index" asp-route-userId="@user.Id">Gestionar Productos</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+<!-- Modal de Confirmación -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Confirmar acción</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="confirmMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelButton">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="confirmButton">Confirmar</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Script de Filtro de Búsqueda -->
 <script>
+    let selectedUserId = null;
+    let selectedSwitch = null;
+    let isActivating = false;
+
+    function handleSwitchClick(userId, checkbox) {
+        // Prevenir que el switch cambie de estado inmediatamente
+        checkbox.checked = !checkbox.checked;
+        selectedUserId = userId;
+        selectedSwitch = checkbox;
+        isActivating = !checkbox.checked;
+
+        // Actualizar mensaje en el modal
+        const message = isActivating
+            ? "¿Estás seguro de activar a este usuario?"
+            : "¿Estás seguro de desactivar a este usuario?";
+        document.getElementById("confirmMessage").textContent = message;
+
+        // Mostrar el modal
+        new bootstrap.Modal(document.getElementById('confirmModal')).show();
+    }
+
+    document.getElementById("confirmButton").addEventListener("click", function () {
+        if (selectedUserId && selectedSwitch) {
+            // Cambiar el estado del switch y enviar el formulario solo si se confirma
+            selectedSwitch.checked = isActivating;
+            const form = document.getElementById(`toggleForm-${selectedUserId}`);
+            form.submit();
+        }
+        bootstrap.Modal.getInstance(document.getElementById('confirmModal')).hide();
+    });
+
+    // Resetear el estado del switch si el usuario cancela la acción
+    document.getElementById("cancelButton").addEventListener("click", function () {
+        selectedSwitch = null;
+        selectedUserId = null;
+    });
+
     function filterUsers() {
         const searchInput = document.getElementById("searchInput").value.toLowerCase();
         const userCards = document.querySelectorAll(".user-card");
@@ -88,55 +142,6 @@
 </script>
 
 <style>
-    body {
-        font-family: 'Roboto', sans-serif;
-        background-color: #F7F7F7;
-        color: #333;
-    }
-
-    .card {
-        border-radius: 10px;
-        background-color: #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    .card-body {
-        padding: 1.5rem;
-    }
-
-    .card-title {
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: #2A2A2A;
-    }
-
-    .card-subtitle {
-        font-size: 0.9rem;
-        font-weight: 300;
-        color: #777;
-    }
-
-    .text-success {
-        color: #28a745 !important;
-    }
-
-    .text-danger {
-        color: #dc3545 !important;
-    }
-
-    .btn-outline-primary {
-        font-size: 0.85rem;
-        padding: 6px 18px;
-        border-radius: 25px;
-    }
-
-    .btn-outline-info {
-        font-size: 0.85rem;
-        padding: 6px 18px;
-        border-radius: 25px;
-    }
-
-    /* Estilos para el Switch */
     .switch {
         position: relative;
         display: inline-block;

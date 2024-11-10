@@ -40,6 +40,7 @@ public class AppDbContext : DbContext
             .WithMany()
             .HasForeignKey(ca => ca.DestinationAccountId)
             .OnDelete(DeleteBehavior.NoAction);
+
     }
 
 }

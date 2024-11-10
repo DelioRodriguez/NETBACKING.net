@@ -1,0 +1,117 @@
+﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Products.ProductViewModel>
+@{
+ViewData["Title"] = "Productos del Usuario";
+}
+
+<h1>Productos</h1>
+
+<div class="d-flex justify-content-between mb-4">
+    <a asp-action="Users" asp-controller="Admin" class="btn btn-outline-secondary">Volver Atrás</a>
+    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProductModal">Añadir Producto</a>
+</div>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+    <div class="col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                    <h5 class="card-title">
+                        @(
+                            product.ProductType == "CuentaAhorro" ? "Cuenta de Ahorro" :
+                            product.ProductType == "Prestamo" ? "Préstamo" :
+                            product.ProductType == "Tarjetacredito" ? "Tarjeta de Crédito" : ""
+                            )
+                    </h5>
+
+                <!-- Mostrar el atributo correcto según el tipo de producto -->
+                @if (product.ProductType == "CuentaAhorro")
+                {
+                <p><strong>Saldo:</strong> @product.Balance</p>
+                }
+                else if (product.ProductType == "Prestamo")
+                {
+                <p><strong>Loan:</strong> @product.LoanAmount</p>
+                }
+                else if (product.ProductType == "Tarjetacredito")
+                {
+                <p><strong>Límite de Crédito:</strong> @product.CreditLimit</p>
+                }
+
+                <p><strong>Identificador:</strong> @product.UniqueIdentifier</p>
+                <form asp-action="DeleteProduct" method="post">
+                    <input type="hidden" name="id" value="@product.UniqueIdentifier" />
+                    <input type="hidden" name="productType" value="@product.ProductType" />
+                    <input type="hidden" name="userId" value="@ViewBag.UserId" />
+                    @if (!product.IsPrimary)
+                    {
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de eliminar este producto?')">Eliminar</button>
+                    }
+                </form>
+            </div>
+        </div>
+    </div>
+    }
+</div>
+
+<!-- Modal para crear un nuevo producto -->
+<div class="modal fade" id="createProductModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Añadir Producto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form asp-action="CreateProduct" method="post">
+                <input type="hidden" name="userId" value="@ViewBag.UserId" />
+
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="productType" class="form-label">Tipo de Producto</label>
+                        <select class="form-select" name="ProductType" id="productType" onchange="updateLabel()">
+                            <option value="CuentaAhorro">Cuenta Ahorro</option>
+                            <option value="Prestamo">Préstamo</option>
+                            <option value="Tarjetacredito">Tarjeta de Crédito</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dynamicInput" id="balanceLabel" class="form-label">Saldo Inicial</label>
+                        <input type="number" class="form-control" name="Balance" id="balanceInput" step="0.01" placeholder="Ingrese el saldo" />
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Añadir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateLabel() {
+        const productType = document.getElementById('productType').value;
+        const balanceLabel = document.getElementById('balanceLabel');
+        const balanceInput = document.getElementById('balanceInput');
+
+        
+        switch (productType) {
+            case 'CuentaAhorro':
+                balanceLabel.textContent = 'Saldo Inicial';
+                balanceInput.name = 'Balance';
+                balanceInput.placeholder = 'Ingrese el saldo inicial';
+                break;
+            case 'Prestamo':
+                balanceLabel.textContent = 'LoanAmount';
+                balanceInput.name = 'LoanAmount';
+                balanceInput.placeholder = 'Ingrese el monto del préstamo';
+                break;
+            case 'Tarjetacredito':
+                balanceLabel.textContent = 'Límite de Crédito';
+                balanceInput.name = 'CreditLimit';
+                balanceInput.placeholder = 'Ingrese el límite de crédito';
+                break;
+        }
+    }
+</script>

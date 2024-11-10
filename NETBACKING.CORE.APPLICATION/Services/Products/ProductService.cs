@@ -71,6 +71,20 @@ public class ProductService : Service<Product>, IProductService
         product.UniqueIdentifier = await GenerateUniqueIdentifierAsync();
         await _productRepository.AddAsync(product);
     }
+
+    public async Task DeleteProduct(string productId)
+    {
+  
+            await _productRepository.DeleteAsync(productId);
+        
+    }
+    public async Task TransferToPrimaryAccount(string userId, decimal amount)
+    {
+        var primaryAccount = await _productRepository.GetPrimaryAccount(userId);
+
+        primaryAccount.Balance += amount;
+        await _productRepository.UpdateAsync(primaryAccount);
+    }
     public async Task<IEnumerable<ProductViewModel>> GetAllProductsByModel(string? userId)
     {
         var products = await  _productRepository.GetByUserIdAsync(userId);
