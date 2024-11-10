@@ -1,62 +1,72 @@
-﻿using NETBACKING.CORE.APPLICATION.DTOs;
+﻿using AutoMapper;
+using NETBACKING.CORE.APPLICATION.DTOs;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services;
+using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 using NETBACKING.CORE.APPLICATION.Models;
+using NETBACKING.CORE.APPLICATION.Enums;
 
-namespace NETBACKING.CORE.APPLICATION.Services;
-
-public class UserService : IUserService
+namespace NETBACKING.CORE.APPLICATION.Services
 {
-    private readonly IUserRepository _userRepository;
-
-    public UserService(IUserRepository userRepository)
+    public class UserService : IUserService
     {
-        _userRepository = userRepository;
-    }
+        private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
+        private readonly IProductService _productService;
 
-    public async Task<List<UserModel>> GetAllUsers()
-    {
-        return await _userRepository.GetAllUsersAsync();
-    }
-
-    public async Task<EditUserDto> GetUserById(string id)
-    {
-        return await _userRepository.GetUserByIdAsync(id);
-    }
-
-    public async Task CreateUser(CreateUserDto userDto, string role)
-    {
-        var userModel = new UserModel
+        public UserService(IUserRepository userRepository, IProductService productService, IMapper mapper)
         {
-            UserName = userDto.UserName,
-            Password = userDto.Password,
-            Email = userDto.Email,
-            FirstName = userDto.FirstName,
-            LastName = userDto.LastName,
-            Identification = userDto.Identification,
-            IsActive = true
-        };
+            _userRepository = userRepository;
+            _productService = productService;
+            _mapper = mapper;
+        }
 
-        await _userRepository.CreateUserAsync(userModel, role);
-    }
-
-    public async Task UpdateUser(EditUserDto userDto)
-    {
-        var userModel = new UserModel
+        public async Task<List<UserModel>> GetAllUsers()
         {
-            Id = userDto.Id,
-            FirstName = userDto.FirstName,
-            LastName = userDto.LastName,
-            Identification = userDto.Identification,
-            Email = userDto.Email,
-            UserName = userDto.UserName
-        };
+            
+            return await _userRepository.GetAllUsersAsync();
+        }
 
-        await _userRepository.UpdateUserAsync(userModel);
-    }
+        public async Task<EditUserDto> GetUserById(string id)
+        {
+            // Devuelve los datos de un usuario por su Id
+            return await _userRepository.GetUserByIdAsync(id);
+        }
 
-    public async Task DeleteUser(string id)
-    {
-        await _userRepository.DeleteUserAsync(id);
+        public async Task CreateUser(CreateUserDto userDto, string role)
+        {
+            // Validación del rol
+            if (!Enum.TryParse(role, true, out Roles parsedRole))
+            {
+                throw new ArgumentException("Invalid role specified.");
+            }
+
+            // Crear el usuario mediante el repositorio
+            await _userRepository.CreateUser(userDto, role);
+
+           
+        }
+
+        public async Task UpdateUser(EditUserDto userDto)
+        {
+        
+            var userModel = _mapper.Map<UserModel>(userDto);
+
+            await _userRepository.UpdateUserAsync(userModel);
+        }
+
+      
+
+        public async Task<LoginResultDTO> AuthenticateUser(LoginDTO loginDto)
+        {
+         
+            return await _userRepository.AuthenticateUserAsync(loginDto);
+        }
+
+        public async Task SignOut()
+        {
+          
+            await _userRepository.SignOutAsync();
+        }
     }
 }
