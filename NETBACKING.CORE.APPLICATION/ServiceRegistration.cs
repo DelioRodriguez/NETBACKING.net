@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Beneficiarys;
+using NETBACKING.CORE.APPLICATION.Interfaces.Services.CashAdvances;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Generic;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.CreditCard;
@@ -10,6 +11,7 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.Loan;
 using NETBACKING.CORE.APPLICATION.Mappers;
 using NETBACKING.CORE.APPLICATION.Services;
 using NETBACKING.CORE.APPLICATION.Services.Beneficiar;
+using NETBACKING.CORE.APPLICATION.Services.CashAdvances;
 using NETBACKING.CORE.APPLICATION.Services.Generic;
 using NETBACKING.CORE.APPLICATION.Services.Products;
 using NETBACKING.CORE.APPLICATION.Services.Transactions.CreditCard;
@@ -29,6 +31,7 @@ namespace NETBACKING.CORE.APPLICATION
             services.AddScoped<IExpressService, ExpressService>();
             services.AddScoped<ICreditCardService, CreditCardService>();
             services.AddScoped<ILoanService, LoanService>();
+            services.AddScoped<ICashAdvancesService, CashAdvanceService>();
             services.AddScoped(typeof(IService<>), typeof(Service<>));
             
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
