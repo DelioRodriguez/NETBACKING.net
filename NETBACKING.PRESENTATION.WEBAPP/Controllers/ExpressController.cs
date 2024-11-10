@@ -25,7 +25,7 @@ public class ExpressController : Controller
 
     public async Task<IActionResult> IndexExpress()
     {
-        return View(await _service.GetProductsByCreditCard(User.FindFirstValue(ClaimTypes.NameIdentifier)) );
+        return View(await _service.GetProductsBycurrentCard(User.FindFirstValue(ClaimTypes.NameIdentifier)) );
     }
 
     [HttpPost]
