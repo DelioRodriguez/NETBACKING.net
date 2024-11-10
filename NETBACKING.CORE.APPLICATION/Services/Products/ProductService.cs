@@ -19,10 +19,32 @@ public class ProductService : Service<Product>, IProductService
         _productRepository = productRepository;
     }
 
-    public async Task<IEnumerable<ProductViewModel>> GetAllProductsByModel(string userId)
+    public async Task<IEnumerable<ProductViewModel>> GetAllProductsByModel(string? userId)
     {
         var products = await  _productRepository.GetByUserIdAsync(userId);
         
         return products.Select(_mapper.Map<ProductViewModel>).ToList();
+    }
+
+    public async Task<ProductViewModel?> GetProductByIdentificador(string identificador)
+    {
+        return _mapper.Map<ProductViewModel>(await _productRepository.GetProductByIdentificador(identificador));
+    }
+
+    public async Task<IEnumerable<ProductViewModel>> GetProductsByCreditCard(string? userId)
+    {
+       return _mapper.Map<IEnumerable<ProductViewModel>>( await _productRepository.GetProductsByCardUser("Tarjeta de Crédito", userId));
+    }
+
+    public async Task<IEnumerable<ProductViewModel>> GetProductsBycurrentCard(string? userId)
+    {
+        return _mapper.Map<IEnumerable<ProductViewModel>>(
+            await _productRepository.GetProductsByCardUser("Cuenta Corriente", userId));
+    }
+
+    public async Task<IEnumerable<ProductViewModel>> GetProductsByLoan(string? userId)
+    {
+        return _mapper.Map<IEnumerable<ProductViewModel>>(
+            await _productRepository.GetProductsByCardUser("Préstamo", userId));
     }
 }

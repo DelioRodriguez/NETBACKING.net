@@ -28,7 +28,31 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Beneficiary" asp-action="Beneficiaries">Beneficiarios</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarPayments" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pagos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarPayments">
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Express" asp-action="IndexExpress">Expreso</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="CreditCard" asp-action="IndexCreditCard">Tarjeta de crédito</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Loan" asp-action="IndexLoan">Préstamo</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Beneficiary" asp-action="PagoBeneficiaries">Beneficiarios</a></li>
+                            </ul>
+                        </li>
+                        <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        @User.Identity.Name 
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="@Url.Action("Logout", "Account")">Cerrar Sesión</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </ul>
+                   
                 </div>
             </div>
         </nav>

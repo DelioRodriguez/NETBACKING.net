@@ -1,0 +1,81 @@
+﻿@model List<NETBACKING.CORE.APPLICATION.ViewModels.Beneficiary.BeneficiaryViewModel>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Pago a Beneficiario</h2>
+
+    <form method="post" asp-action="PagoBeneficiaries" asp-controller="Beneficiary" id="paymentForm">
+        <!-- Selección del Beneficiario -->
+        <div class="mb-3">
+            <label for="accountNumber" class="form-label">Seleccione el Beneficiario</label>
+            <select class="form-select" id="accountNumber" name="accountNumber" required>
+                <option selected disabled value="">Seleccione un beneficiario</option>
+                
+                @foreach (var beneficiarios in Model)
+                {
+                    <option value="@beneficiarios.AccountNumber">@beneficiarios.FirstName @beneficiarios.LastName - Cuenta: @beneficiarios.AccountNumber</option>
+                }
+            </select>
+        </div>
+
+        <!-- Selección de Cuenta de Origen -->
+        <div class="mb-3">
+            <label for="originAccount" class="form-label">Cuenta de Origen</label>
+            <select class="form-select" id="originAccount" name="originAccount" required>
+                <option selected disabled value="">Seleccione una cuenta</option>
+                
+                @foreach (var beneficiary in Model)
+                {
+                    if (beneficiary.Current != null)
+                    {
+                        foreach (var cuentas in beneficiary.Current)
+                        {
+                            <option value="@cuentas.UniqueIdentifier" data-balance="1000">Cuenta @cuentas.UniqueIdentifier - Balance: @cuentas.Balance</option>
+                        }
+                    }
+                }
+            </select>
+        </div>
+
+        <!-- Monto a Pagar -->
+        <div class="mb-3">
+            <label for="paymentAmount" class="form-label">Monto a Pagar</label>
+            <input type="number" class="form-control" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
+        </div>
+
+        <!-- Botón de Pago -->
+        <button type="button" class="btn btn-primary w-100" onclick="confirmPayment()">Realizar Pago</button>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+<script>
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <text>
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <text>
+        Swal.fire({
+            icon: 'error',
+            title: '¡Error!',
+            text: '@TempData["ErrorMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+    
+    </script>

@@ -31,13 +31,8 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
         return _mapper.Map<List<BeneficiaryViewModel>>(await _beneficiaryRepository.GetByIdUserAsyncModel(id));
     }
 
-    public async Task AddAsyncByModel(string idCuenta)
+    public async Task AddAsyncByModel(string idCuenta, string? idUser)
     {
-        if (await _beneficiaryRepository.BeneficiaryExistsAsync(idCuenta))
-        {
-            throw new AddBeneficiaryException("Ya existe un beneficiario con ese número de cuenta.", null);
-        }
-        
         try
         {
             var product = await _productRepository.GetProductByIdentificador(idCuenta);
@@ -50,17 +45,23 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
                 {
                     throw new AddBeneficiaryException("El usuario asociado al producto no fue encontrado.", null);
                 }
-                
-                    var beneficiary = new Beneficiary
-                    {
-                        FirstName = user.FirstName,
-                        LastName = user.LastName,
-                        ApplicationUserId = user.Id,
-                        AccountNumber = product.UniqueIdentifier
-                    };
-                
-                    await _beneficiaryRepository.AddAsync(beneficiary);
-                
+
+                var existingBeneficiary = await _beneficiaryRepository.GetByUserIdAndAccountNumberAsync(idUser, product.UniqueIdentifier);
+                if (existingBeneficiary != null)
+                {
+                    throw new AddBeneficiaryException("Este beneficiario ya ha sido agregado previamente.", null);
+                }
+
+                // Agregar beneficiario si no existe
+                var beneficiary = new Beneficiary
+                {
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    ApplicationUserId = idUser,
+                    AccountNumber = product.UniqueIdentifier
+                };
+
+                await _beneficiaryRepository.AddAsync(beneficiary);
             }
         }
         catch (Exception e)
@@ -68,5 +69,10 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
             throw new AddBeneficiaryException("Error al intentar agregar un beneficiario.", e);
         }
     }
-    
+
+
+    public async Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAsync(string idCuenta)
+    {
+        return _mapper.Map<BeneficiaryViewModel>(await _beneficiaryRepository.GetBeneficiaryByIdCuentaAsync(idCuenta)); 
+    }
 }

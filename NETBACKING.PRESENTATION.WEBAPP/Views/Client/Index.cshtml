@@ -22,31 +22,32 @@ ViewData["Title"] = "Lista de Productos";
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
                                 <h5 class="card-title">@product.ProductType</h5>
-                                <p class="card-text">
-                                    <strong>ID:</strong> @product.UniqueIdentifier <br />
-                                    <strong>Principal:</strong> @(product.IsPrimary ? "Sí" : "No")
-                                </p>
-                                @if (product.ProductType == "Cuenta de ahorro")
+                                @if (product.ProductType == "Cuenta Corriente")
                                 {
                                     <p class="card-text">
+                                        <strong>ID:</strong> @product.UniqueIdentifier <br />
                                         <strong>Balance:</strong> $@product.Balance
                                     </p>
                                 }
-                                else if (product.ProductType == "Tarjeta de credito")
+                                else if (product.ProductType == "Tarjeta de Crédito")
                                 {
                                     <p class="card-text">
-                                        <strong>Deuda:</strong> $@product.Balance <br />
+                                        <strong>ID:</strong> @product.UniqueIdentifier <br />
+                                        <strong>Deuda:</strong> $@product.Balance <br/>
                                         <strong>Límite de Crédito:</strong> $@product.CreditLimit
                                     </p>
                                 }
-                                else if (product.ProductType == "Prestamo")
+                                else if (product.ProductType == "Préstamo")
                                 {
                                     <p class="card-text">
-                                        <strong>Monto del Préstamo:</strong> $@product.LoanAmount <br />
-                                        <strong>Deuda Actual:</strong> $@product.Balance
+                                        <strong>ID Prestamo:</strong> @product.UniqueIdentifier <br />
+                                        <strong>Deuda del Préstamo:</strong> $@product.LoanAmount <br/>
                                     </p>
                                 }
                             </div>
+                            <p class="card-text">
+                                <strong>Principal:</strong> @(product.IsPrimary ? "Sí" : "No")
+                            </p>
                             <div class="card-footer text-muted text-center">
                                 <small>@(product.IsPrimary ? "Producto Principal" : "Producto Secundario")</small>
                             </div>

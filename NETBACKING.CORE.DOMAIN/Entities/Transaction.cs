@@ -31,6 +31,6 @@ namespace NETBACKING.CORE.DOMAIN.Entities
         [Required]
         public virtual Product SourceAccount { get; set; }
 
-        public virtual Product DestinationAccount { get; set; }
+        public virtual Product? DestinationAccount { get; set; }
     }
 }

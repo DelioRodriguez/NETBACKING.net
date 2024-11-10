@@ -10,20 +10,6 @@ ViewData["Title"] = "Lista de Beneficiarios";
     <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addBeneficiaryModal">Agregar Beneficiario</button>
 
     <div class="row">
-        @if (TempData["SuccessMessage"] != null)
-            {
-        <div class="alert alert-success">
-            @TempData["SuccessMessage"]
-        </div>
-        }
-
-        @if (TempData["ErrorMessage"] != null)
-        {
-        <div class="alert alert-danger">
-            @TempData["ErrorMessage"]
-        </div>
-        }
-        
             <div class="row">
                 @foreach (var beneficiary in Model)
                 {
@@ -52,7 +38,6 @@ ViewData["Title"] = "Lista de Beneficiarios";
     </div>
 </div>
 
-<!-- Modal para agregar beneficiario -->
 <div class="modal fade" id="addBeneficiaryModal" tabindex="-1" aria-labelledby="addBeneficiaryModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -90,6 +75,35 @@ ViewData["Title"] = "Lista de Beneficiarios";
     });
 </script>
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    @if (TempData["SuccessMessage"] != null)
+    {
+    <text>
+    Swal.fire({
+        icon: 'success',
+        title: '¡Éxito!',
+        text: '@TempData["SuccessMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+    <text>
+    Swal.fire({
+        icon: 'error',
+        title: '¡Error!',
+        text: '@TempData["ErrorMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
+    }
+</script>
 
 
 

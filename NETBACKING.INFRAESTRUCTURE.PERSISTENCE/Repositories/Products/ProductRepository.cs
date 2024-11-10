@@ -15,7 +15,7 @@ public class ProductRepository : Repository<Product>, IProductRepository
         this._context = context;
     }
 
-    public async Task<List<Product>> GetByUserIdAsync(string userId)
+    public async Task<List<Product>> GetByUserIdAsync(string? userId)
     {
         return await _context.Products
             .Where(p => p.ApplicationUserId == userId)
@@ -27,4 +27,13 @@ public class ProductRepository : Repository<Product>, IProductRepository
         return await _context.Products
             .FirstOrDefaultAsync(p => p.UniqueIdentifier == identificador)!;
     }
+
+    public async Task<IEnumerable<Product>> GetProductsByCardUser(string productType, string? userId)
+    {
+        return await _context.Products
+            .Where(p => p.ApplicationUserId == userId &&
+                 p.ProductType == productType)
+            .ToListAsync();
+    }
+    
 }

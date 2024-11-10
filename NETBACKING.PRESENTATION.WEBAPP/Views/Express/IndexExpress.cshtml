@@ -1,0 +1,62 @@
+﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Products.ProductViewModel>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Pago Expreso</h2>
+
+    <form method="post" action="@Url.Action("IndexExpress", "Express")" id="paymentForm">
+        <div class="mb-3">
+            <label for="accountNumber" class="form-label">Número de Cuenta Destino</label>
+            <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Ingrese el número de cuenta" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="paymentAmount" class="form-label">Monto a Pagar</label>
+            <input type="number" class="form-control" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="originAccount" class="form-label">Cuenta de Origen</label>
+            <select class="form-select" id="originAccount" name="originAccount" required>
+                <option selected disabled value="">Seleccione una cuenta</option>
+                @foreach (var product in Model)
+                {
+                <option value="@product.UniqueIdentifier">Cuenta @product.UniqueIdentifier - @product.Balance</option>
+                }
+            </select>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="confirmPayment()">Realizar Pago</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    
+    <script>
+        @if (TempData["SuccessMessage"] != null)
+        {
+        <text>
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: '@TempData["SuccessMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+        <text>
+        Swal.fire({
+            icon: 'error',
+            title: '¡Error!',
+            text: '@TempData["ErrorMessage"]',
+            showConfirmButton: true,
+            timer: 5000
+        });
+        </text>
+        }
+    
+    </script>
+</div>
