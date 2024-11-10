@@ -9,7 +9,7 @@ namespace NETBACKING.CORE.APPLICATION.Interfaces.Repositories
         Task SignOutAsync();
         Task<List<UserModel>> GetAllUsersAsync();
         Task<EditUserDto> GetUserByIdAsync(string id);
-        Task CreateUserAsync(UserModel userModel,string role);
+        Task CreateUser(CreateUserDto userDto, string role);
         Task UpdateUserAsync(UserModel userModel);
         Task DeleteUserAsync(string id);
     }

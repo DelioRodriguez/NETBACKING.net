@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NETBACKING.CORE.APPLICATION.DTOs;
 using NETBACKING.CORE.APPLICATION.Enums;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
+using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 using NETBACKING.CORE.APPLICATION.Models;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
@@ -13,12 +16,17 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IProductService _productService;
+        private readonly IMapper _mapper;
+        
 
-        public UserRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager , RoleManager<IdentityRole> roleManager)
+        public UserRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager , RoleManager<IdentityRole> roleManager, IMapper mapper, IProductService productService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _mapper = mapper;
+            _productService = productService;
         }
 
         public async Task<LoginResultDTO> AuthenticateUserAsync(LoginDTO loginDto)
@@ -54,7 +62,7 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
                 IsSuccessful = true,
                 IsActive = true,
                 RedirectUrl = redirectUrl,
-                UserRole = roles.FirstOrDefault() // Asignar el rol del usuario aquí
+                UserRole = roles.FirstOrDefault()
             };
         }
 
@@ -67,22 +75,34 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
         public async Task<List<UserModel>> GetAllUsersAsync()
         {
             var users = await _userManager.Users.ToListAsync();
-            return users.Select(user => new UserModel
+            var userList = new List<UserModel>();
+
+            foreach (var user in users)
             {
-                Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Identification = user.Identification,
-                Email = user.Email,
-                UserName = user.UserName,
-                IsActive = user.IsActive
-            }).ToList();
+                var roles = await _userManager.GetRolesAsync(user); 
+                var role = roles.FirstOrDefault(); 
+
+                userList.Add(new UserModel
+                {
+                    Id = user.Id,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Identification = user.Identification,
+                    Email = user.Email,
+                    UserName = user.UserName,
+                    IsActive = user.IsActive,
+                    Role = role 
+                });
+            }
+
+            return userList;
         }
+
 
         public async Task<EditUserDto> GetUserByIdAsync(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return null;
+            if (user == null) return null!;
 
             return new EditUserDto
             {
@@ -96,33 +116,63 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             };
         }
 
-        public async Task CreateUserAsync(UserModel userModel, string role)
+        public async Task CreateUser(CreateUserDto userDto, string role)
         {
+            // Validación del rol
+            if (!Enum.TryParse(role, true, out Roles parsedRole))
+            {
+                throw new ArgumentException("Invalid role specified.");
+            }
+
             var user = new ApplicationUser
             {
-                UserName = userModel.UserName,
-                Email = userModel.Email,
-                FirstName = userModel.FirstName,
-                LastName = userModel.LastName,
-                Identification = userModel.Identification,
-                IsActive = true
+                UserName = userDto.UserName,
+                Email = userDto.Email,
+                FirstName = userDto.FirstName,
+                LastName = userDto.LastName,
+                Identification = userDto.Identification,
+                IsActive = userDto.IsActive
             };
 
-            var result = await _userManager.CreateAsync(user, userModel.Password);
+            var result = await _userManager.CreateAsync(user, userDto.Password);
             if (!result.Succeeded)
             {
-                throw new Exception("No se pudo crear el usuario: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+                throw new InvalidOperationException("Error creating user: " + string.Join(", ", result.Errors.Select(e => e.Description)));
             }
 
-            // Verificar si el rol existe, de lo contrario lanzar una excepción
-            if (!await _roleManager.RoleExistsAsync(role))
+            if (string.IsNullOrEmpty(user.Id))
             {
-                throw new Exception($"El rol '{role}' no existe.");
+                throw new InvalidOperationException("User ID not assigned after user creation.");
             }
 
-            // Asignar el rol al usuario
-            await _userManager.AddToRoleAsync(user, role);
+            // Asignar el rol
+            var roleResult = await _userManager.AddToRoleAsync(user, role);
+            if (!roleResult.Succeeded)
+            {
+                throw new InvalidOperationException("Error assigning role: " + string.Join(", ", roleResult.Errors.Select(e => e.Description)));
+            }
+
+            // Si el rol es 'Client', crear la cuenta de ahorro
+            if (parsedRole == Roles.Client)
+            {
+                var savingsAccount = _mapper.Map<ProductCreateViewModel>(userDto);
+
+                // Asegurar que ApplicationUserId esté asignado
+                savingsAccount.ApplicationUserId = user.Id;  // Asignar el Id generado
+                savingsAccount.Balance = userDto.InitialAmount ?? 0;
+
+                // Verificar que ApplicationUserId no sea nulo
+                if (string.IsNullOrEmpty(savingsAccount.ApplicationUserId))
+                {
+                    throw new InvalidOperationException("ApplicationUserId cannot be null when creating a product.");
+                }
+
+                // Crear el producto (cuenta de ahorro)
+                await _productService.CreateProduct(savingsAccount);
+            }
         }
+
+
 
         public async Task UpdateUserAsync(UserModel userModel)
         {

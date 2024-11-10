@@ -6,7 +6,7 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 
 namespace NETBACKING.PRESENTATION.WEBAPP.Controllers;
 
-[Authorize(Roles = nameof(Roles.Client))]
+
 public class ClientController : Controller
 {
     private readonly IProductService _productService;
@@ -15,7 +15,7 @@ public class ClientController : Controller
     {
         _productService = productService;
     }
-
+    [Authorize(Roles = nameof(Roles.Client))]
     public async Task<IActionResult> Index()
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);

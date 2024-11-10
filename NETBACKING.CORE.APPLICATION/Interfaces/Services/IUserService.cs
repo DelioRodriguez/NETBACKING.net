@@ -9,5 +9,5 @@ public interface IUserService
     Task<EditUserDto> GetUserById(string id);
     Task CreateUser(CreateUserDto userDto,string role);
     Task UpdateUser(EditUserDto userDto);
-    Task DeleteUser(string id);
+ 
 }

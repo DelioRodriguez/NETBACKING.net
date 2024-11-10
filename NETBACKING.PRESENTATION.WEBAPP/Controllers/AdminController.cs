@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using NETBACKING.CORE.APPLICATION.Enums;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services;
 using NETBACKING.CORE.APPLICATION.DTOs;
+using AutoMapper;
+using NETBACKING.CORE.APPLICATION.Models;
 
 namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
 {
@@ -10,12 +12,14 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
     public class AdminController : Controller
     {
         private readonly IDashBoardService _dashboardService;
-        private readonly IUserService _userService; // Inyección del servicio de usuario
+        private readonly IUserService _userService;
+        private readonly IMapper _mapper;
 
-        public AdminController(IDashBoardService dashboardService, IUserService userService)
+        public AdminController(IDashBoardService dashboardService, IUserService userService, IMapper mapper)
         {
             _dashboardService = dashboardService;
-            _userService = userService; // Inicialización del servicio de usuario
+            _userService = userService;
+            _mapper = mapper;
         }
 
         public IActionResult Index()
@@ -27,67 +31,74 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
         public async Task<IActionResult> Users()
         {
             var users = await _userService.GetAllUsers(); // Obtener todos los usuarios
-            return View(users); // Pasar los usuarios a la vista
+            return View(users);
         }
 
         public IActionResult CreateUser()
         {
-            return View(); // Mostrar vista para crear un nuevo usuario
+            return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto userDto)
         {
-            userDto.IsActive = true;
+            userDto.IsActive = true; 
+
             if (ModelState.IsValid)
             {
-                await _userService.CreateUser(userDto,userDto.UserType); // Llamar al servicio para crear el usuario
-                return RedirectToAction(nameof(Index)); // Redirigir al listado de usuarios
+               
+                var userModel = _mapper.Map<UserModel>(userDto);
+                
+                await _userService.CreateUser(userDto, userDto.UserType); 
+                
+                return RedirectToAction(nameof(Users)); 
             }
-            return View(userDto); // Volver a mostrar el formulario si hay errores
+
+            return View(userDto); 
         }
 
         public async Task<IActionResult> EditUser(string id)
         {
-            var user = await _userService.GetUserById(id); // Obtener el usuario del servicio
+            var user = await _userService.GetUserById(id); 
 
             if (user == null)
             {
                 return NotFound();
             }
 
-            // Mapea UserModel a EditUserDto
-            var editUserDto = new EditUserDto
-            {
-                Id = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                Identification = user.Identification,
-                UserName = user.UserName,
-                IsActive = user.IsActive
-            };
+            var editUserDto = _mapper.Map<EditUserDto>(user);
 
             return View(editUserDto);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> EditUser(EditUserDto userDto)
         {
             if (ModelState.IsValid)
             {
-                await _userService.UpdateUser(userDto); // Llamar al servicio para actualizar el usuario
-                return RedirectToAction(nameof(Users)); // Redirigir al listado de usuarios
+                var userModel = _mapper.Map<UserModel>(userDto);
+                await _userService.UpdateUser(userDto);
+                return RedirectToAction(nameof(Users)); 
             }
-            return View(userDto); // Volver a mostrar el formulario si hay errores
+
+            return View(userDto); 
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteUser(string id)
+        public async Task<IActionResult> ToggleUserStatus(string id)
         {
-            await _userService.DeleteUser(id); // Llamar al servicio para eliminar el usuario
-            return RedirectToAction(nameof(Users)); // Redirigir al listado de usuarios
+           
+            var user = await _userService.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound("Usuario no encontrado.");
+            }
+
+            user.IsActive = !user.IsActive;
+
+            await _userService.UpdateUser(_mapper.Map<EditUserDto>(user));
+
+            return RedirectToAction(nameof(Users));
         }
     }
 }

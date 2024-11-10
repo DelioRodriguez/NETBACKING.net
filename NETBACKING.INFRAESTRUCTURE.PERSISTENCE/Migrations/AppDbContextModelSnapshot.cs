@@ -100,16 +100,16 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<decimal>("Balance")
+                    b.Property<decimal?>("Balance")
                         .HasColumnType("decimal(18, 2)");
 
-                    b.Property<decimal>("CreditLimit")
+                    b.Property<decimal?>("CreditLimit")
                         .HasColumnType("decimal(18, 2)");
 
                     b.Property<bool>("IsPrimary")
                         .HasColumnType("bit");
 
-                    b.Property<decimal>("LoanAmount")
+                    b.Property<decimal?>("LoanAmount")
                         .HasColumnType("decimal(18, 2)");
 
                     b.Property<string>("ProductType")
