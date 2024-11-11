@@ -178,7 +178,6 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             user.FirstName = userModel.FirstName;
             user.LastName = userModel.LastName;
             user.Identification = userModel.Identification;
-            user.IsActive = userModel.IsActive;
             user.Email = userModel.Email;
             user.UserName = userModel.UserName;
 

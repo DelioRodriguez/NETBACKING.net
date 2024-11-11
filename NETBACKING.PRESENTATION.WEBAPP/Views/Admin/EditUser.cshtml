@@ -4,44 +4,75 @@
 ViewData["Title"] = "Editar Usuario";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1 class="text-center my-4">@ViewData["Title"]</h1>
 
-<form asp-action="EditUser" method="post">
+<form id="editUserForm" asp-action="EditUser" method="post" class="p-4 shadow-lg rounded bg-light">
     <input type="hidden" asp-for="Id" />
-    <div class="form-group">
-        <label asp-for="FirstName" class="control-label"></label>
-        <input asp-for="FirstName" class="form-control" />
+
+    <div class="form-group mb-3">
+        <label asp-for="FirstName" class="control-label"><i class="bi bi-person-circle"></i> Nombre</label>
+        <input asp-for="FirstName" class="form-control" placeholder="Ingrese el nombre" />
         <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="LastName" class="control-label"></label>
-        <input asp-for="LastName" class="form-control" />
+
+    <div class="form-group mb-3">
+        <label asp-for="LastName" class="control-label"><i class="bi bi-person-badge"></i> Apellido</label>
+        <input asp-for="LastName" class="form-control" placeholder="Ingrese el apellido" />
         <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="Identification" class="control-label"></label>
-        <input asp-for="Identification" class="form-control" readonly /> <!-- No editable -->
+
+    <div class="form-group mb-3">
+        <label asp-for="Identification" class="control-label"><i class="bi bi-card-list"></i> Cédula</label>
+        <input asp-for="Identification" class="form-control" readonly placeholder="Cédula (no editable)" />
     </div>
-    <div class="form-group">
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Email" class="control-label"><i class="bi bi-envelope-fill"></i> Correo Electrónico</label>
+        <input asp-for="Email" class="form-control" placeholder="Ingrese el correo electrónico" />
         <span asp-validation-for="Email" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="UserName" class="control-label"></label>
-        <input asp-for="UserName" class="form-control" />
+
+    <div class="form-group mb-3">
+        <label asp-for="UserName" class="control-label"><i class="bi bi-person-lock"></i> Nombre de Usuario</label>
+        <input asp-for="UserName" class="form-control" placeholder="Ingrese el nombre de usuario" />
         <span asp-validation-for="UserName" class="text-danger"></span>
     </div>
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" type="password" class="form-control" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Password" class="control-label"><i class="bi bi-key-fill"></i> Contraseña</label>
+        <input asp-for="Password" type="password" class="form-control" placeholder="Ingrese la nueva contraseña" />
         <span asp-validation-for="Password" class="text-danger"></span>
-        <small class="form-text text-muted">Deja en blanco si no deseas cambiar la contraseña.</small> <!-- Mensaje opcional -->
+        <small class="form-text text-muted">Deja en blanco si no deseas cambiar la contraseña.</small>
     </div>
-    <div class="form-group form-check">
-        <input asp-for="IsActive" class="form-check-input" type="checkbox" />
-        <label asp-for="IsActive" class="form-check-label"></label>
+
+    <div class="form-group mb-3">
+        <label for="VerifyPassword"><i class="bi bi-key"></i> Verificar Contraseña</label>
+        <input id="VerifyPassword" type="password" class="form-control" placeholder="Verifica la contraseña" />
+        <span id="passwordError" class="text-danger" style="display:none;">Las contraseñas no coinciden.</span>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-    <a asp-action="Users" class="btn btn-secondary">Cancelar</a>
+
+    <div class="d-flex justify-content-between">
+        <button type="submit" id="submitBtn" class="btn btn-success"><i class="bi bi-save-fill"></i> Guardar Cambios</button>
+        <a asp-action="Users" class="btn btn-danger"><i class="bi bi-x-circle-fill"></i> Cancelar</a>
+    </div>
 </form>
+
+@section Scripts {
+<script>
+    document.getElementById('editUserForm').addEventListener('submit', function (event) {
+        const password = document.getElementById('Password').value;
+        const verifyPassword = document.getElementById('VerifyPassword').value;
+        const errorMessage = document.getElementById('passwordError');
+        const submitBtn = document.getElementById('submitBtn');
+
+        if (password !== verifyPassword) {
+            event.preventDefault(); // Previene el envío del formulario
+            errorMessage.style.display = 'block'; // Muestra el error
+            submitBtn.disabled = true; // Deshabilita el botón de enviar
+        } else {
+            errorMessage.style.display = 'none'; // Oculta el error
+            submitBtn.disabled = false; // Habilita el botón de enviar
+        }
+    });
+</script>
+}
