@@ -95,13 +95,13 @@ public class BeneficiaryController : Controller
         
         if (u?.ApplicationUserId == bene )
         {
-            TempData["ErrorMessage"] = "No te puedes agregar tu mismo.";
+            TempData["ErrorMessage"] = "El Beneficiario ya esta agregado.";
             return RedirectToAction("Beneficiaries");
         }
         
         if (idCuenta.Length != 9)
         {
-            TempData["ErrorMessage"] = "El número de cuenta debe tener exactamente 9 dígitos.";
+            TempData["ErrorMessage"] = "El numero de cuenta debe tener exactamente 9 digitos.";
             return RedirectToAction("Beneficiaries");
         }
         

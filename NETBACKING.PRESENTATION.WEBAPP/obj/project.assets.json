@@ -4643,19 +4643,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\": {}
+    "C:\\Users\\rodri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NetBacking\\NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj",
       "projectName": "NETBACKING.PRESENTATION.WEBAPP",
-      "projectPath": "C:\\NetBacking\\NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj",
-      "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-      "outputPath": "C:\\NetBacking\\NETBACKING.PRESENTATION.WEBAPP\\obj\\",
+      "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj",
+      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4670,20 +4670,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
-              "projectPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
+            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
             },
-            "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-              "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
             },
-            "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
-              "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj"
+            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
+              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj"
             },
-            "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {
-              "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj"
+            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {
+              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj"
             },
-            "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
-              "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj"
+            "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
+              "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj"
             }
           }
         }
@@ -4729,7 +4729,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

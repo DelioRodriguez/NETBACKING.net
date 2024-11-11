@@ -46,6 +46,13 @@ public class CreditCardController : Controller
     {
         try
         {
+            var creditExiste = await _productService.GetProductByIdentificador(creditCard);
+            
+            if (creditExiste!.Balance == 0)
+            {
+                throw new ApplicationException("La deuda ya esta pagada.");
+            }
+            
             if (!ModelState.IsValid)
             {
                 var errors = ModelState.Values.SelectMany(v => v.Errors);
@@ -57,7 +64,7 @@ public class CreditCardController : Controller
 
             if (paymentSuccess)
             {
-                TempData["SuccessMessage"] = "Pago realizado con éxito.";
+                TempData["SuccessMessage"] = "Pago realizado con exito.";
                 return RedirectToAction("IndexCreditCard");
             }
             else

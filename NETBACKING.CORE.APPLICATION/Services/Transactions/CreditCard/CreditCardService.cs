@@ -19,7 +19,6 @@ public class CreditCardService : Service<Transaction>, ICreditCardService
     {
         var credit = await _productRepository.GetProductByIdentificador(creditCard);
         var original = await _productRepository.GetProductByIdentificador(originAccount);
-
       
         var transaction = new Transaction
         {

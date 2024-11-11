@@ -1035,18 +1035,12 @@
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.CORE.APPLICATION.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.CORE.APPLICATION.dll": {}
         }
       },
       "NETBACKING.CORE.DOMAIN/1.0.0": {
         "runtime": {
-          "NETBACKING.CORE.DOMAIN.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.CORE.DOMAIN.dll": {}
         }
       }
     }

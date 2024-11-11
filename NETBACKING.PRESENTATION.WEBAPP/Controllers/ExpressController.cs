@@ -18,7 +18,7 @@ public class ExpressController : Controller
 
     public ExpressController(IProductService service, IExpressService expressService, IUserService userService)
     {
-        this._service = service;
+        _service = service;
         _expressService = expressService;
         _userService = userService;
     }
@@ -31,6 +31,18 @@ public class ExpressController : Controller
     [HttpPost]
     public async Task<IActionResult> IndexExpress(string accountNumber, decimal paymentAmount, string originAccount)
     {
+        if (accountNumber.Length != 9)
+        {
+            TempData["ErrorMessage"] = "El numero de cuenta debe tener exactamente 9 digitos.";
+            return RedirectToAction("IndexExpress");
+        }
+
+        if (paymentAmount == null)
+        {
+            TempData["ErrorMessage"] = "El numero de cuenta debe tener un numero.";
+            return RedirectToAction("IndexExpress");
+        }
+        
         try
         {
             var model = new ExpressViewModel
@@ -40,9 +52,9 @@ public class ExpressController : Controller
                 OriginAccount = originAccount
             };
         
-            if (accountNumber.Length != 9 || paymentAmount <= 0 || originAccount.Length != 9)
+            if (paymentAmount <= 0)
             {
-                TempData["ErrorMessage"] = "Todos los campos son requeridos.";
+                TempData["ErrorMessage"] = "Error, el numero de cuenta debe ser positivo.";
                 return RedirectToAction("IndexExpress");  
             }
         
