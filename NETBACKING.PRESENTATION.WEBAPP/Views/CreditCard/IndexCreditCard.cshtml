@@ -1,69 +1,117 @@
 ﻿@model NETBACKING.CORE.APPLICATION.ViewModels.Payments.CreditCard.CombinedCardViewModel
 
+@{
+Layout = "_LayoutClient";
+}
+
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Pago de Tarjeta de Crédito</h2>
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-credit-card-2-back-fill"></i> Pago de Tarjeta de Crédito
+    </h2>
 
     <form method="post" asp-action="IndexCreditCard" asp-controller="CreditCard" id="creditCardPaymentForm">
-        <div class="mb-3">
-            <label for="creditCard" class="form-label">Tarjeta de Crédito</label>
-            <select class="form-select" id="creditCard" name="creditCard" required>
+        <!-- Selección de Tarjeta de Crédito -->
+        <div class="mb-4">
+            <label for="creditCard" class="form-label fw-bold">
+                <i class="bi bi-credit-card"></i> Seleccione una Tarjeta de Crédito
+            </label>
+            <select class="form-select shadow-sm" id="creditCard" name="creditCard" required>
                 <option selected disabled value="">Seleccione una tarjeta de crédito</option>
-                
                 @foreach (var card in Model.CreditCards)
                 {
-                        <option value="@card.UniqueIdentifier" data-debt="@card.Balance">Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance</option>
+                <option value="@card.UniqueIdentifier" data-debt="@card.Balance">
+                    <i class="bi bi-credit-card"></i> Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance
+                </option>
                 }
             </select>
         </div>
 
-        <div class="mb-3">
-            <label for="originAccount" class="form-label">Cuenta de Origen</label>
-            <select class="form-select" id="originAccount" name="originAccount" required>
+        <!-- Selección de Cuenta de Origen -->
+        <div class="mb-4">
+            <label for="originAccount" class="form-label fw-bold">
+                <i class="bi bi-wallet2"></i> Cuenta de Origen
+            </label>
+            <select class="form-select shadow-sm" id="originAccount" name="originAccount" required>
                 <option selected disabled value="">Seleccione una cuenta</option>
                 @foreach (var card in Model.Current)
                 {
-                <option value="@card.UniqueIdentifier" data-debt="@card.Balance">Cuenta @card.UniqueIdentifier - Balance: @card.Balance</option>
+                <option value="@card.UniqueIdentifier" data-debt="@card.Balance">
+                    <i class="bi bi-wallet2"></i> Cuenta @card.UniqueIdentifier - Balance: @card.Balance
+                </option>
                 }
             </select>
         </div>
 
-        <div class="mb-3">
-            <label for="paymentAmount" class="form-label">Monto a Pagar</label>
-            <input type="number" class="form-control" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
+        <!-- Monto a Pagar -->
+        <div class="mb-4">
+            <label for="paymentAmount" class="form-label fw-bold">
+                <i class="bi bi-currency-dollar"></i> Monto a Pagar
+            </label>
+            <input type="number" class="form-control shadow-sm" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
         </div>
 
-        <button type="button" class="btn btn-primary" onclick="confirmPayCredit()">Realizar Pago</button>
+        <!-- Botón de Pago -->
+        <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmPayCredit()">
+            <i class="bi bi-cash-coin"></i> Realizar Pago
+        </button>
     </form>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-
-    <script>
-        @if (TempData["SuccessMessage"] != null)
-        {
-        <text>
-        Swal.fire({
-            icon: 'success',
-            title: '¡Éxito!',
-            text: '@TempData["SuccessMessage"]',
-            showConfirmButton: true,
-            timer: 5000
-        });
-        </text>
-        }
-
-        @if (TempData["ErrorMessage"] != null)
-        {
-        <text>
-        Swal.fire({
-            icon: 'error',
-            title: '¡Error!',
-            text: '@TempData["ErrorMessage"]',
-            showConfirmButton: true,
-            timer: 5000
-        });
-        </text>
-        }
-
-    </script>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    @if (TempData["SuccessMessage"] != null)
+    {
+    <text>
+    Swal.fire({
+        icon: 'success',
+        title: '¡Éxito!',
+        text: '@TempData["SuccessMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+    <text>
+    Swal.fire({
+        icon: 'error',
+        title: '¡Error!',
+        text: '@TempData["ErrorMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
+    }
+
+    function confirmPayCredit() {
+        const creditCard = document.getElementById('creditCard').value;
+        const originAccount = document.getElementById('originAccount').value;
+        const paymentAmount = document.getElementById('paymentAmount').value;
+
+        if (creditCard && originAccount && paymentAmount) {
+            Swal.fire({
+                title: '¿Confirmar Pago?',
+                text: `Va a realizar un pago de ${paymentAmount} a la tarjeta seleccionada. ¿Desea continuar?`,
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Sí, confirmar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById("creditCardPaymentForm").submit();
+                }
+            });
+        } else {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Faltan Datos',
+                text: 'Por favor, complete todos los campos antes de continuar.',
+            });
+        }
+    }
+</script>

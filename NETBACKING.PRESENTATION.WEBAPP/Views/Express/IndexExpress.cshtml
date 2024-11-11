@@ -1,36 +1,56 @@
 ﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Products.ProductViewModel>
 
+@{
+Layout = "_LayoutClient";
+}
+
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Pago Expreso</h2>
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-lightning-fill"></i> Pago Expreso
+    </h2>
 
     <form method="post" action="@Url.Action("IndexExpress", "Express")" id="paymentForm">
-        <div class="mb-3">
-            <label for="accountNumber" class="form-label">Número de Cuenta Destino</label>
-            <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Ingrese el número de cuenta" required>
+        <!-- Número de Cuenta Destino -->
+        <div class="mb-4">
+            <label for="accountNumber" class="form-label fw-bold">
+                <i class="bi bi-credit-card-2-front"></i> Número de Cuenta Destino
+            </label>
+            <input type="text" class="form-control shadow-sm" id="accountNumber" name="accountNumber" placeholder="Ingrese el número de cuenta" required>
         </div>
 
-        <div class="mb-3">
-            <label for="paymentAmount" class="form-label">Monto a Pagar</label>
-            <input type="number" class="form-control" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
+        <!-- Monto a Pagar -->
+        <div class="mb-4">
+            <label for="paymentAmount" class="form-label fw-bold">
+                <i class="bi bi-currency-dollar"></i> Monto a Pagar
+            </label>
+            <input type="number" class="form-control shadow-sm" id="paymentAmount" name="paymentAmount" placeholder="Ingrese el monto" min="1" required>
         </div>
 
-        <div class="mb-3">
-            <label for="originAccount" class="form-label">Cuenta de Origen</label>
-            <select class="form-select" id="originAccount" name="originAccount" required>
+        <!-- Cuenta de Origen -->
+        <div class="mb-4">
+            <label for="originAccount" class="form-label fw-bold">
+                <i class="bi bi-wallet2"></i> Cuenta de Origen
+            </label>
+            <select class="form-select shadow-sm" id="originAccount" name="originAccount" required>
                 <option selected disabled value="">Seleccione una cuenta</option>
                 @foreach (var product in Model)
                 {
-                <option value="@product.UniqueIdentifier">Cuenta @product.UniqueIdentifier - @product.Balance</option>
+                <option value="@product.UniqueIdentifier">
+                    Cuenta @product.UniqueIdentifier - Balance: @product.Balance
+                </option>
                 }
             </select>
         </div>
 
-        <button type="button" class="btn btn-primary" onclick="confirmPayment()">Realizar Pago</button>
+        <!-- Botón de Envío -->
+        <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmPayment()">
+            <i class="bi bi-cash-coin"></i> Realizar Pago
+        </button>
     </form>
 
+    <!-- Scripts de alerta para éxito y error -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    
     <script>
         @if (TempData["SuccessMessage"] != null)
         {
@@ -57,6 +77,34 @@
         });
         </text>
         }
-    
+
+        function confirmPayment() {
+            const accountNumber = document.getElementById('accountNumber').value;
+            const originAccount = document.getElementById('originAccount').value;
+            const paymentAmount = document.getElementById('paymentAmount').value;
+
+            if (accountNumber && originAccount && paymentAmount) {
+                Swal.fire({
+                    title: '¿Confirmar Pago?',
+                    text: `Va a realizar un pago de ${paymentAmount}. ¿Desea continuar?`,
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sí, confirmar',
+                    cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById("paymentForm").submit();
+                    }
+                });
+            } else {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Faltan Datos',
+                    text: 'Por favor, complete todos los campos antes de continuar.',
+                });
+            }
+        }
     </script>
 </div>

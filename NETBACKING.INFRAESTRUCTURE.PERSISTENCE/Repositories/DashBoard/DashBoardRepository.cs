@@ -26,12 +26,12 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
 
         public decimal GetTotalPayments()
         {
-            return _context.CashAdvances.Sum(ca => ca.Amount);
+            return _context.Transactions.Sum(ca => ca.Amount);
         }
 
         public decimal GetPaymentsToday()
         {
-            return _context.CashAdvances.Where(ca => ca.Date.Date == DateTime.Today).Sum(ca => ca.Amount);
+            return _context.Transactions.Where(ca => ca.Date.Date == DateTime.Today).Sum(ca => ca.Amount);
         }
 
         public int GetActiveCustomers()

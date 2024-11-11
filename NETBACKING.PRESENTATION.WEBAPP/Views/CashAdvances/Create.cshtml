@@ -1,93 +1,118 @@
 ﻿@model NETBACKING.CORE.APPLICATION.ViewModels.CashAdvance.CashAdvanceViewModel
 
-<h2>Avance de Efectivo</h2>
+@{
+Layout = "_LayoutClient";
+}
 
-<form asp-action="Create" method="post" id="advanceForm" novalidate>
-    <div>
-        <label asp-for="CreditCardId">Tarjeta</label>
-        <select asp-for="CreditCardId" class="form-control">
-            <option value="-1">Seleccione una tarjeta</option>
-            @if (Model.CreditCards != null)
-            {
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-cash-stack"></i> Avance de Efectivo
+    </h2>
+
+    <form asp-action="Create" method="post" id="advanceForm" novalidate>
+        <!-- Selección de Tarjeta -->
+        <div class="mb-4">
+            <label asp-for="CreditCardId" class="form-label fw-bold">
+                <i class="bi bi-credit-card"></i> Tarjeta
+            </label>
+            <select asp-for="CreditCardId" class="form-select shadow-sm" required>
+                <option value="-1">Seleccione una tarjeta</option>
+                @if (Model.CreditCards != null)
+                {
                 foreach (var card in Model.CreditCards)
                 {
-                    <option value="@card.Id" data-debt="@card.Balance">Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance - Limite: @card.CreditLimit</option>
+                <option value="@card.Id" data-debt="@card.Balance">
+                    <i class="bi bi-credit-card"></i> Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance - Limite: @card.CreditLimit
+                </option>
                 }
-            }
-        </select>
-        <span asp-validation-for="CreditCardId" class="text-danger"></span>
-    </div>
+                }
+            </select>
+            <span asp-validation-for="CreditCardId" class="text-danger"></span>
+        </div>
 
-    <div>
-        <label asp-for="DestinationAccountId">Cuenta Destino</label>
-        <select asp-for="DestinationAccountId" class="form-control">
-            <option value="-1">Seleccione una cuenta</option>
-            @if (Model.SavingsAccounts != null)
-            {
+        <!-- Selección de Cuenta Destino -->
+        <div class="mb-4">
+            <label asp-for="DestinationAccountId" class="form-label fw-bold">
+                <i class="bi bi-wallet2"></i> Cuenta Destino
+            </label>
+            <select asp-for="DestinationAccountId" class="form-select shadow-sm" required>
+                <option value="-1">Seleccione una cuenta</option>
+                @if (Model.SavingsAccounts != null)
+                {
                 foreach (var account in Model.SavingsAccounts)
                 {
-                    <option value="@account.Id" data-balance="@account.Balance">Cuenta @account.UniqueIdentifier - Balance: @account.Balance</option>
+                <option value="@account.Id" data-balance="@account.Balance">
+                    <i class="bi bi-wallet2"></i> Cuenta @account.UniqueIdentifier - Balance: @account.Balance
+                </option>
                 }
-            }
-        </select>
-        <span asp-validation-for="DestinationAccountId" class="text-danger"></span>
-    </div>
+                }
+            </select>
+            <span asp-validation-for="DestinationAccountId" class="text-danger"></span>
+        </div>
 
-    <div>
-        <label asp-for="Amount">Monto del Avance</label>
-        <input asp-for="Amount" type="number" step="0.01" class="form-control" required />
-        <span asp-validation-for="Amount" class="text-danger"></span>
-    </div>
+        <!-- Monto del Avance -->
+        <div class="mb-4">
+            <label asp-for="Amount" class="form-label fw-bold">
+                <i class="bi bi-currency-dollar"></i> Monto del Avance
+            </label>
+            <input asp-for="Amount" type="number" step="0.01" class="form-control shadow-sm" required />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
 
-    <button type="button" onclick="confirmAdvance()">Realizar Avance</button>
-</form>
+        <!-- Botón de Confirmación -->
+        <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmAdvance()">
+            <i class="bi bi-cash-coin"></i> Realizar Avance
+        </button>
+    </form>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-        function confirmAdvance() {
-    const form = document.getElementById('advanceForm');
-    const button = document.querySelector("button[type='button']");
+    function confirmAdvance() {
+        const form = document.getElementById('advanceForm');
+        const button = document.querySelector("button[type='button']");
 
-    Swal.fire({
-        title: '¿Confirmar Avance de Efectivo?',
-        text: "Por favor, confirme para proceder con el avance de efectivo.",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Sí, confirmar',
-        cancelButtonText: 'Cancelar'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            button.disabled = true;
-            form.submit();
-        }
-    });
-}
+        Swal.fire({
+            title: '¿Confirmar Avance de Efectivo?',
+            text: "Por favor, confirme para proceder con el avance de efectivo.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, confirmar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                button.disabled = true;
+                form.submit();
+            }
+        });
+    }
+
     @if (TempData["SuccessMessage"] != null)
     {
-        <text>
-                    Swal.fire({
-                        icon: 'success',
-                        title: '¡Éxito!',
-                        text: '@TempData["SuccessMessage"]',
-                        showConfirmButton: true,
-                        timer: 5000
-                    });
-        </text>
+    <text>
+    Swal.fire({
+        icon: 'success',
+        title: '¡Éxito!',
+        text: '@TempData["SuccessMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
     }
 
     @if (TempData["ErrorMessage"] != null)
     {
-        <text>
-                    Swal.fire({
-                        icon: 'error',
-                        title: '¡Error!',
-                        text: '@TempData["ErrorMessage"]',
-                        showConfirmButton: true,
-                        timer: 5000
-                    });
-        </text>
+    <text>
+    Swal.fire({
+        icon: 'error',
+        title: '¡Error!',
+        text: '@TempData["ErrorMessage"]',
+        showConfirmButton: true,
+        timer: 5000
+    });
+    </text>
     }
-</script>  
+</script>

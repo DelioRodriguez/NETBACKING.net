@@ -58,3 +58,15 @@ C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.CORE.DOMAIN\obj\Debug\net8.
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\refint\NETBACKING.CORE.DOMAIN.dll
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.pdb
 C:\Programacion 3\ApiRestaurant\NetBackin\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\ref\NETBACKING.CORE.DOMAIN.dll
+C:\NetBacking\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.deps.json
+C:\NetBacking\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.dll
+C:\NetBacking\NETBACKING.CORE.DOMAIN\bin\Debug\net8.0\NETBACKING.CORE.DOMAIN.pdb
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.AssemblyInfoInputs.cache
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.AssemblyInfo.cs
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.csproj.CoreCompileInputs.cache
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.sourcelink.json
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.dll
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\refint\NETBACKING.CORE.DOMAIN.dll
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\NETBACKING.CORE.DOMAIN.pdb
+C:\NetBacking\NETBACKING.CORE.DOMAIN\obj\Debug\net8.0\ref\NETBACKING.CORE.DOMAIN.dll

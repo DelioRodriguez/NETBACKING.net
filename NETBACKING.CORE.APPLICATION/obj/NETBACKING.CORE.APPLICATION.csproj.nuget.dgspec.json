@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {}
+    "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+    "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+        "projectUniqueName": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
         "projectName": "NETBACKING.CORE.APPLICATION",
-        "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\obj\\",
+        "projectPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-                "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+              "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
               }
             }
           }
@@ -75,21 +75,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+    "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+        "projectUniqueName": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
         "projectName": "NETBACKING.CORE.DOMAIN",
-        "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.CORE.DOMAIN\\obj\\",
+        "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -136,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

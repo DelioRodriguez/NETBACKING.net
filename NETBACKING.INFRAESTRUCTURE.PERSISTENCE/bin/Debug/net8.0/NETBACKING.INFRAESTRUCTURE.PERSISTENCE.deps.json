@@ -709,12 +709,18 @@
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.CORE.APPLICATION.dll": {}
+          "NETBACKING.CORE.APPLICATION.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.CORE.DOMAIN/1.0.0": {
         "runtime": {
-          "NETBACKING.CORE.DOMAIN.dll": {}
+          "NETBACKING.CORE.DOMAIN.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NETBACKING.INFRAESTRUCTURE.IDENTITY/1.0.0": {
@@ -730,7 +736,10 @@
           "NETBACKING.CORE.DOMAIN": "1.0.0"
         },
         "runtime": {
-          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {}
+          "NETBACKING.INFRAESTRUCTURE.IDENTITY.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

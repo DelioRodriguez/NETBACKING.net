@@ -1,57 +1,63 @@
 ﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.ViewModels.Products.ProductViewModel>
 @{
-ViewData["Title"] = "Productos del Usuario";
+    ViewData["Title"] = "Productos del Usuario";
 }
 
-<h1>Productos</h1>
+<h1 class="text-center my-4 text-primary">@ViewData["Title"]</h1>
 
 <div class="d-flex justify-content-between mb-4">
     <a asp-action="Users" asp-controller="Admin" class="btn btn-outline-secondary">Volver Atrás</a>
     <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createProductModal">Añadir Producto</a>
 </div>
 
-<div class="row">
-    @foreach (var product in Model)
-    {
-    <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                    <h5 class="card-title">
-                        @(
-                            product.ProductType == "CuentaAhorro" ? "Cuenta de Ahorro" :
-                            product.ProductType == "Prestamo" ? "Préstamo" :
-                            product.ProductType == "Tarjetacredito" ? "Tarjeta de Crédito" : ""
+<div class="container">
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            if (product.ProductType == "Prestamo" && product.LoanAmount == 0) continue; // Filtra préstamos con loanAmount 0
+
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @(
+                                product.ProductType == "CuentaAhorro" ? "Cuenta de Ahorro" :
+                                product.ProductType == "Prestamo" ? "Préstamo" :
+                                product.ProductType == "Tarjetacredito" ? "Tarjeta de Crédito" : ""
                             )
-                    </h5>
+                        </h5>
+                        <p class="card-text">
+                            <strong>Identificador:</strong> @product.UniqueIdentifier
+                        </p>
 
-                <!-- Mostrar el atributo correcto según el tipo de producto -->
-                @if (product.ProductType == "CuentaAhorro")
-                {
-                <p><strong>Saldo:</strong> @product.Balance</p>
-                }
-                else if (product.ProductType == "Prestamo")
-                {
-                <p><strong>Loan:</strong> @product.LoanAmount</p>
-                }
-                else if (product.ProductType == "Tarjetacredito")
-                {
-                <p><strong>Límite de Crédito:</strong> @product.CreditLimit</p>
-                }
+                        <!-- Mostrar el atributo correcto según el tipo de producto -->
+                        @if (product.ProductType == "CuentaAhorro")
+                        {
+                            <p><strong>Saldo:</strong> @product.Balance</p>
+                        }
+                        else if (product.ProductType == "Prestamo")
+                        {
+                            <p><strong>Loan:</strong> @product.LoanAmount</p>
+                        }
+                        else if (product.ProductType == "Tarjetacredito")
+                        {
+                            <p><strong>Límite de Crédito:</strong> @product.CreditLimit</p>
+                        }
 
-                <p><strong>Identificador:</strong> @product.UniqueIdentifier</p>
-                <form asp-action="DeleteProduct" method="post">
-                    <input type="hidden" name="id" value="@product.UniqueIdentifier" />
-                    <input type="hidden" name="productType" value="@product.ProductType" />
-                    <input type="hidden" name="userId" value="@ViewBag.UserId" />
-                    @if (!product.IsPrimary)
-                    {
-                    <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de eliminar este producto?')">Eliminar</button>
-                    }
-                </form>
+                        <form asp-action="DeleteProduct" method="post">
+                            <input type="hidden" name="id" value="@product.UniqueIdentifier" />
+                            <input type="hidden" name="productType" value="@product.ProductType" />
+                            <input type="hidden" name="userId" value="@ViewBag.UserId" />
+                            @if (!product.IsPrimary)
+                            {
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('¿Está seguro de eliminar este producto?')">Eliminar</button>
+                            }
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
+        }
     </div>
-    }
 </div>
 
 <!-- Modal para crear un nuevo producto -->
@@ -95,7 +101,6 @@ ViewData["Title"] = "Productos del Usuario";
         const balanceLabel = document.getElementById('balanceLabel');
         const balanceInput = document.getElementById('balanceInput');
 
-        
         switch (productType) {
             case 'CuentaAhorro':
                 balanceLabel.textContent = 'Saldo Inicial';

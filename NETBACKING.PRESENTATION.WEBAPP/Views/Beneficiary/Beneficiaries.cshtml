@@ -2,48 +2,49 @@
 
 @{
 ViewData["Title"] = "Lista de Beneficiarios";
+Layout = "_LayoutClient";
 }
 
 <div class="container mt-4">
-    <h2 class="text-center mb-4">Beneficiarios del Cliente</h2>
-    
-    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addBeneficiaryModal">Agregar Beneficiario</button>
+    <h2 class="text-center mb-4" style="color: #1E90FF;">Beneficiarios del Cliente</h2>
+
+    <button class="btn btn-primary mb-3" style="background-color: #1E90FF; border: none;" data-bs-toggle="modal" data-bs-target="#addBeneficiaryModal">
+        <i class="bi bi-plus-circle"></i> Agregar Beneficiario
+    </button>
 
     <div class="row">
-            <div class="row">
-                @foreach (var beneficiary in Model)
-                {
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card shadow-sm h-100">
-                            <form id="deleteForm_@beneficiary.Id" action="@Url.Action("DeleteBeneficiary", "Beneficiary")" method="post" class="position-absolute top-0 end-0 m-2">
-                                <button type="button" class="btn btn-link p-0" title="Eliminar" onclick="confirmDelete(@beneficiary.Id)">
-                                    <img src="/Icons/borrar.png" alt="Eliminar" style="width: 20px; height: 20px;" />
-                                </button>
-                                <input type="hidden" name="id" value="@beneficiary.Id" />
-                            </form>
-                            <div class="card-body">
-                                <h5 class="card-title">@beneficiary.FirstName @beneficiary.LastName</h5>
-                                <p class="card-text">
-                                    <strong>Número de Cuenta:</strong> @beneficiary.AccountNumber <br/>
-                                </p>
-                            </div>
-                            <div class="card-footer text-muted text-center">
-                                <small>Información del Beneficiario</small>
-                            </div>
-                        </div>
-                    </div>
-                }
+        @foreach (var beneficiary in Model)
+        {
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card shadow-sm h-100 border-0" style="border-radius: 15px;">
+                <form id="deleteForm_@beneficiary.Id" action="@Url.Action("DeleteBeneficiary", "Beneficiary")" method="post" class="position-absolute top-0 end-0 m-2">
+                    <button type="button" class="btn btn-link p-0" title="Eliminar" onclick="confirmDelete(@beneficiary.Id)">
+                        <i class="bi bi-trash" style="color: #FF6347; font-size: 20px;"></i>
+                    </button>
+                    <input type="hidden" name="id" value="@beneficiary.Id" />
+                </form>
+                <div class="card-body text-center">
+                    <h5 class="card-title" style="color: #1E90FF;">@beneficiary.FirstName @beneficiary.LastName</h5>
+                    <p class="card-text">
+                        <strong>Número de Cuenta:</strong> @beneficiary.AccountNumber <br/>
+                    </p>
+                </div>
+                <div class="card-footer text-center" style="background-color: #f0f8ff; border-radius: 0 0 15px 15px;">
+                    <small class="text-muted">Información del Beneficiario</small>
+                </div>
             </div>
-        
+        </div>
+        }
     </div>
 </div>
 
+<!-- Modal Agregar Beneficiario -->
 <div class="modal fade" id="addBeneficiaryModal" tabindex="-1" aria-labelledby="addBeneficiaryModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 15px;">
+            <div class="modal-header" style="background-color: #1E90FF; color: white; border-top-left-radius: 15px; border-top-right-radius: 15px;">
                 <h5 class="modal-title" id="addBeneficiaryModalLabel">Agregar Beneficiario</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form id="addBeneficiaryForm" action="/Beneficiary/Beneficiaries" method="post">
                 <div class="modal-body">
@@ -53,10 +54,9 @@ ViewData["Title"] = "Lista de Beneficiarios";
                         <div id="accountNumberError" class="text-danger" style="display:none;">El número de cuenta no existe.</div>
                     </div>
                 </div>
-                <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="submit" class="btn btn-primary">Agregar</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius: 15px;">Cerrar</button>
+                    <button type="submit" class="btn btn-primary" style="background-color: #1E90FF; border-radius: 15px; border: none;">Agregar</button>
                 </div>
             </form>
         </div>
@@ -74,7 +74,6 @@ ViewData["Title"] = "Lista de Beneficiarios";
         }
     });
 </script>
-
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
@@ -105,5 +104,4 @@ ViewData["Title"] = "Lista de Beneficiarios";
     }
 </script>
 
-
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
