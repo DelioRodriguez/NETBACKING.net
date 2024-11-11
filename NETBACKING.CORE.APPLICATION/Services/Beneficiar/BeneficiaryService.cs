@@ -39,6 +39,22 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
 
             if (product != null)
             {
+               
+                if (product.ProductType == "Prestamo")
+                {
+                    throw new AddBeneficiaryException("No se puede agregar un prestamo como beneficiario.", null);
+                }
+                
+                if (product.ProductType == "Tarjetacredito")
+                {
+                    throw new AddBeneficiaryException("No se puede agregar una Tarjeta credito como beneficiario.", null);
+                }
+                
+                if (product.ApplicationUserId == idUser)
+                {
+                    throw new AddBeneficiaryException("No se puede agregar la cuenta propia como beneficiario.", null);
+                }
+
                 var user = await _userRepository.GetUserByIdAsync(product.ApplicationUserId);
 
                 if (user == null)
@@ -52,7 +68,7 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
                     throw new AddBeneficiaryException("Este beneficiario ya ha sido agregado previamente.", null);
                 }
 
-                // Agregar beneficiario si no existe
+                // Agregar beneficiario si no existe y el producto no es un préstamo
                 var beneficiary = new Beneficiary
                 {
                     FirstName = user.FirstName,
@@ -63,6 +79,10 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
 
                 await _beneficiaryRepository.AddAsync(beneficiary);
             }
+        }
+        catch (AddBeneficiaryException)
+        {
+            throw;
         }
         catch (Exception e)
         {

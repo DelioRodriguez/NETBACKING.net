@@ -7,9 +7,12 @@
         <label asp-for="CreditCardId">Tarjeta</label>
         <select asp-for="CreditCardId" class="form-control">
             <option value="-1">Seleccione una tarjeta</option>
-            @foreach (var card in Model.CreditCards)
+            @if (Model.CreditCards != null)
             {
+                foreach (var card in Model.CreditCards)
+                {
                     <option value="@card.Id" data-debt="@card.Balance">Tarjeta @card.UniqueIdentifier - Deuda: @card.Balance - Limite: @card.CreditLimit</option>
+                }
             }
         </select>
         <span asp-validation-for="CreditCardId" class="text-danger"></span>
@@ -19,9 +22,12 @@
         <label asp-for="DestinationAccountId">Cuenta Destino</label>
         <select asp-for="DestinationAccountId" class="form-control">
             <option value="-1">Seleccione una cuenta</option>
-            @foreach (var account in Model.SavingsAccounts)
+            @if (Model.SavingsAccounts != null)
             {
-                <option value="@account.Id" data-balance="@account.Balance">Cuenta @account.UniqueIdentifier - Balance: @account.Balance</option>
+                foreach (var account in Model.SavingsAccounts)
+                {
+                    <option value="@account.Id" data-balance="@account.Balance">Cuenta @account.UniqueIdentifier - Balance: @account.Balance</option>
+                }
             }
         </select>
         <span asp-validation-for="DestinationAccountId" class="text-danger"></span>

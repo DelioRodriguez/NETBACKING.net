@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NETBACKING.CORE.DOMAIN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7bed539a2f33afda9b102611b05e8491cd3ec669")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a94e78879873aaf7523a95b6e4239ca7370c3425")]
 [assembly: System.Reflection.AssemblyProductAttribute("NETBACKING.CORE.DOMAIN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NETBACKING.CORE.DOMAIN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

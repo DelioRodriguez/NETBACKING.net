@@ -41,9 +41,7 @@ namespace NETBACKING.CORE.APPLICATION.Services.CashAvances
                 creditCard.Balance = 0;
             }
             
-             if (creditCard.Balance <= creditCard.CreditLimit){
-
-
+            if (creditCard.Balance <= creditCard.CreditLimit){
                 creditCard.Balance += amount + interest;
                 destinationAccount.Balance += amount;
 
