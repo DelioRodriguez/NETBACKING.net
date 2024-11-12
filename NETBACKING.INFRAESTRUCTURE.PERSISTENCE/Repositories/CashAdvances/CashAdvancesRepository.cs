@@ -7,10 +7,10 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.CashAdvances
 {
     public class CashAdvancesRepository : Repository<CashAdvance>, ICashAdvancesRepository
     {
-        private readonly AppDbContext _context;
+       
         public CashAdvancesRepository(AppDbContext context )  : base(context)
         {
-            _context = context; 
+            
         }
 
     }

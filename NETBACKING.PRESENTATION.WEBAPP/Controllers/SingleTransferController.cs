@@ -3,9 +3,12 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.SingleTransfer;
 using NETBACKING.CORE.APPLICATION.ViewModels.SingleTransfer;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using NETBACKING.CORE.APPLICATION.Enums;
 
 namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
 {
+    [Authorize(Roles = nameof(Roles.Client))]
     public class SingleTransferController : Controller
     {
         private readonly ISingleTransferService _singleTransferService;

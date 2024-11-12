@@ -10,7 +10,7 @@ Layout = "_LayoutClient";
     </h2>
 
     <form asp-action="Create" method="post" id="advanceForm" novalidate>
-        <!-- Selección de Tarjeta -->
+       
         <div class="mb-4">
             <label asp-for="CreditCardId" class="form-label fw-bold">
                 <i class="bi bi-credit-card"></i> Tarjeta
@@ -30,7 +30,7 @@ Layout = "_LayoutClient";
             <span asp-validation-for="CreditCardId" class="text-danger"></span>
         </div>
 
-        <!-- Selección de Cuenta Destino -->
+   
         <div class="mb-4">
             <label asp-for="DestinationAccountId" class="form-label fw-bold">
                 <i class="bi bi-wallet2"></i> Cuenta Destino
@@ -50,7 +50,7 @@ Layout = "_LayoutClient";
             <span asp-validation-for="DestinationAccountId" class="text-danger"></span>
         </div>
 
-        <!-- Monto del Avance -->
+      
         <div class="mb-4">
             <label asp-for="Amount" class="form-label fw-bold">
                 <i class="bi bi-currency-dollar"></i> Monto del Avance
@@ -59,7 +59,7 @@ Layout = "_LayoutClient";
             <span asp-validation-for="Amount" class="text-danger"></span>
         </div>
 
-        <!-- Botón de Confirmación -->
+ 
         <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmAdvance()">
             <i class="bi bi-cash-coin"></i> Realizar Avance
         </button>

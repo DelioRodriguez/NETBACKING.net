@@ -1,13 +1,14 @@
 ﻿@model NETBACKING.CORE.APPLICATION.DTOs.EditUserDto
 
 @{
-ViewData["Title"] = "Editar Usuario";
+    ViewData["Title"] = "Editar Usuario";
 }
 
 <h1 class="text-center my-4">@ViewData["Title"]</h1>
 
 <form id="editUserForm" asp-action="EditUser" method="post" class="p-4 shadow-lg rounded bg-light">
     <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="IsActive" />
 
     <div class="form-group mb-3">
         <label asp-for="FirstName" class="control-label"><i class="bi bi-person-circle"></i> Nombre</label>
@@ -22,7 +23,7 @@ ViewData["Title"] = "Editar Usuario";
     </div>
 
     <div class="form-group mb-3">
-        <label asp-for="Identification" class="control-label"><i class="bi bi-card-list"></i> Cédula</label>
+        <label asp-for="Identification" class="control-label"><i class="bi bi-card-list"></i> Cédula (no editable)</label>
         <input asp-for="Identification" class="form-control" readonly placeholder="Cédula (no editable)" />
     </div>
 
@@ -33,8 +34,8 @@ ViewData["Title"] = "Editar Usuario";
     </div>
 
     <div class="form-group mb-3">
-        <label asp-for="UserName" class="control-label"><i class="bi bi-person-lock"></i> Nombre de Usuario</label>
-        <input asp-for="UserName" class="form-control" placeholder="Ingrese el nombre de usuario" />
+        <label asp-for="UserName" class="control-label"><i class="bi bi-person-lock"></i> Nombre de Usuario (no editable)</label>
+        <input asp-for="UserName" class="form-control" readonly placeholder="Nombre de usuario (no editable)" />
         <span asp-validation-for="UserName" class="text-danger"></span>
     </div>
 
@@ -58,21 +59,21 @@ ViewData["Title"] = "Editar Usuario";
 </form>
 
 @section Scripts {
-<script>
-    document.getElementById('editUserForm').addEventListener('submit', function (event) {
-        const password = document.getElementById('Password').value;
-        const verifyPassword = document.getElementById('VerifyPassword').value;
-        const errorMessage = document.getElementById('passwordError');
-        const submitBtn = document.getElementById('submitBtn');
+    <script>
+        document.getElementById('editUserForm').addEventListener('submit', function (event) {
+            const password = document.getElementById('Password').value;
+            const verifyPassword = document.getElementById('VerifyPassword').value;
+            const errorMessage = document.getElementById('passwordError');
+            const submitBtn = document.getElementById('submitBtn');
 
-        if (password !== verifyPassword) {
-            event.preventDefault(); // Previene el envío del formulario
-            errorMessage.style.display = 'block'; // Muestra el error
-            submitBtn.disabled = true; // Deshabilita el botón de enviar
-        } else {
-            errorMessage.style.display = 'none'; // Oculta el error
-            submitBtn.disabled = false; // Habilita el botón de enviar
-        }
-    });
-</script>
+            if (password !== verifyPassword) {
+                event.preventDefault();
+                errorMessage.style.display = 'block';
+                submitBtn.disabled = true;
+            } else {
+                errorMessage.style.display = 'none';
+                submitBtn.disabled = false;
+            }
+        });
+    </script>
 }

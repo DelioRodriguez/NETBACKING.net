@@ -2,7 +2,7 @@
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Context;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
 
-namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
+namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.DashBoard
 {
     public class DashBoardRepository : IDashBoardRepository
     {
@@ -12,7 +12,7 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
         public DashBoardRepository(AppDbContext context, IdentityContext context1)
         {
             _context = context;
-            this.identityContext = context1;
+           identityContext = context1;
         }
         public int GetTotalTransactions()
         {

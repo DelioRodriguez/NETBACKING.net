@@ -12,7 +12,7 @@ public class ProductRepository : Repository<Product>, IProductRepository
     
     public ProductRepository(AppDbContext context) : base(context)
     {
-        this._context = context;
+      _context = context;
     }
 
     public  async Task<Product> GetPrimaryAccount(string userId)

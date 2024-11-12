@@ -6,7 +6,7 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 
 namespace NETBACKING.PRESENTATION.WEBAPP.Controllers;
 
-
+[Authorize(Roles = nameof(Roles.Client))]
 public class ClientController : Controller
 {
     private readonly IProductService _productService;

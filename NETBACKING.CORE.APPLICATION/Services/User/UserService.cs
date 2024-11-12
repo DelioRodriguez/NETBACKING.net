@@ -12,13 +12,32 @@ namespace NETBACKING.CORE.APPLICATION.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
-        private readonly IProductService _productService;
 
-        public UserService(IUserRepository userRepository, IProductService productService, IMapper mapper)
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
-            _productService = productService;
             _mapper = mapper;
+        }
+
+        public async Task<bool> IsEmailDuplicateAsync(string email, string userId)
+        {
+            return await _userRepository.IsEmailDuplicateAsync(email, userId);
+        }
+
+        public async Task<bool> EmailExistsAsync(string email)
+        {
+            return await _userRepository.EmailExistsAsync(email);
+        }
+
+        public async Task<bool> IdentificationExistsAsync(string identification)
+        {
+            return await _userRepository.IdentificationExistsAsync(identification);
+
+        }
+
+        public async  Task<bool> UsernameExistsAsync(string username)
+        {
+            return await _userRepository.UsernameExistsAsync(username);
         }
 
         public async Task<List<UserModel>> GetAllUsers()
@@ -29,19 +48,19 @@ namespace NETBACKING.CORE.APPLICATION.Services
 
         public async Task<EditUserDto> GetUserById(string id)
         {
-            // Devuelve los datos de un usuario por su Id
+            
             return await _userRepository.GetUserByIdAsync(id);
         }
 
         public async Task CreateUser(CreateUserDto userDto, string role)
         {
-            // Validación del rol
+            
             if (!Enum.TryParse(role, true, out Roles parsedRole))
             {
                 throw new ArgumentException("Invalid role specified.");
             }
 
-            // Crear el usuario mediante el repositorio
+           
             await _userRepository.CreateUser(userDto, role);
 
            
@@ -53,20 +72,6 @@ namespace NETBACKING.CORE.APPLICATION.Services
             var userModel = _mapper.Map<UserModel>(userDto);
 
             await _userRepository.UpdateUserAsync(userModel);
-        }
-
-      
-
-        public async Task<LoginResultDTO> AuthenticateUser(LoginDTO loginDto)
-        {
-         
-            return await _userRepository.AuthenticateUserAsync(loginDto);
-        }
-
-        public async Task SignOut()
-        {
-          
-            await _userRepository.SignOutAsync();
         }
     }
 }

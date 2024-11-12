@@ -7,7 +7,7 @@ using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
 namespace NETBACKING.INFRAESTRUCTURE.IDENTITY;
 
-public static class ServicioRegistration
+public static class ServiceRegistration
 {
     public static void AddIdentityInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {

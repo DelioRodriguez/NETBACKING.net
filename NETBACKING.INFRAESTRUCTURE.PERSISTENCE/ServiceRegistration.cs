@@ -11,12 +11,12 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.CreditCar
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Express;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Loan;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Transactions;
-using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.Express;
-using NETBACKING.CORE.APPLICATION.Services.Transactions.CreditCard;
+
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
-using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories;
+
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Beneficiarys;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.CashAdvances;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.DashBoard;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Generic;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Products;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.SingleTransfer;
@@ -24,10 +24,11 @@ using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.CreditCar
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Express;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Loan;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Transactions;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.User;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
 {
-    public static class ServicioRegistration
+    public static class ServiceRegistration
     {
         public static void AddContextInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {

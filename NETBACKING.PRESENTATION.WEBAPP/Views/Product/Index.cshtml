@@ -14,7 +14,7 @@
     <div class="row">
         @foreach (var product in Model)
         {
-            if (product.ProductType == "Prestamo" && product.LoanAmount == 0) continue; // Filtra préstamos con loanAmount 0
+            if (product.ProductType == "Prestamo" && product.LoanAmount == 0) continue;
 
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card shadow-sm border-0">
@@ -30,7 +30,7 @@
                             <strong>Identificador:</strong> @product.UniqueIdentifier
                         </p>
 
-                        <!-- Mostrar el atributo correcto según el tipo de producto -->
+                       
                         @if (product.ProductType == "CuentaAhorro")
                         {
                             <p><strong>Saldo:</strong> @product.Balance</p>

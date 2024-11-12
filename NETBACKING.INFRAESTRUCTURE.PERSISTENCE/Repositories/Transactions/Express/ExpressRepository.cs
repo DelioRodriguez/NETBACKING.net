@@ -7,10 +7,10 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Expre
 
 public class ExpressRepository : Repository<Transaction>, IExpressRepository
 {
-    private readonly AppDbContext _context;
+    
     
     public ExpressRepository(AppDbContext context) : base(context)
     {
-        _context = context;
+      
     }
 }

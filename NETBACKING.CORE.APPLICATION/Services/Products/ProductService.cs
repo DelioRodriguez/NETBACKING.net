@@ -35,35 +35,20 @@ public class ProductService : Service<Product>, IProductService
 
         return uniqueIdentifier;
     }
-    public async Task<Product> CreateProductofficial(ProductViewModel productViewModel)
+
+    public  async Task DepositToAccount(string productId, decimal amount)
     {
-        var product = _mapper.Map<Product>(productViewModel);
+        var product = await _productRepository.GetProductByIdentificador(productId);
+        
+        if (product == null)
+            throw new Exception("Producto no encontrado.");
 
-        product.UniqueIdentifier = await GenerateUniqueIdentifierAsync();
+        product.Balance += amount;
 
-        switch (productViewModel.ProductType.ToLower())
-        {
-            case "Prestamo":
-                product.LoanAmount = productViewModel.LoanAmount;
-                productViewModel.IsPrimary = false;
-                break;
-           
-            case "Cuentaahorro" :
-                product.Balance = productViewModel.Balance;
-                productViewModel.IsPrimary = false;
-                break;
-           
-            case "tarjetacredito":
-                product.CreditLimit = productViewModel.CreditLimit;
-                productViewModel.IsPrimary = false;
-                break;
-
-            default:
-                throw new ArgumentException("Tipo de producto no válido.");
-        }
-        await _productRepository.AddAsync(product);
-        return product;
+       
+        await _productRepository.UpdateAsync(product);
     }
+
     public async Task CreateProduct(ProductCreateViewModel productViewModel)
     {
        

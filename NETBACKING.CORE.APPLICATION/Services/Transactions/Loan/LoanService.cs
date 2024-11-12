@@ -9,12 +9,11 @@ namespace NETBACKING.CORE.APPLICATION.Services.Transactions.Loan;
 
 public class LoanService : Service<Transaction>, ILoanService
 {
-    private readonly IProductService _productService;
     private readonly IProductRepository _productRepository;
     
-    public LoanService(IRepository<Transaction> repository, IProductService productService, IProductRepository productRepository) : base(repository)
+    public LoanService(IRepository<Transaction> repository,  IProductRepository productRepository) : base(repository)
     {
-        _productService = productService;
+        
         _productRepository = productRepository;
     }
 

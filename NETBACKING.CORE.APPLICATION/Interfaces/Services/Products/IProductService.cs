@@ -6,6 +6,7 @@ namespace NETBACKING.CORE.APPLICATION.Interfaces.Services.Products;
 
 public interface IProductService : IService<Product>
 {  
+    Task DepositToAccount(string productId, decimal amount);
     Task CreateProduct(ProductCreateViewModel productViewModel);
     Task TransferToPrimaryAccount(string userId, decimal amount);
     Task DeleteProduct(string productId);

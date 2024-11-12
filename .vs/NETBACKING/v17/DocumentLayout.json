@@ -1,7 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\NetBanking\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\NETBACKING.net\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\views\\product\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\product\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbacking.net\\netbacking.core.application\\viewmodels\\products\\depositviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\viewmodels\\products\\depositviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\netbacking.net\\netbacking.infraestructure.persistence\\repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbacking.net\\netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\admin\\users.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbacking.net\\netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\dtos\\edituserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 185,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwKAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:25:28.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Deposit.cshtml",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Product\\Deposit.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Product\\Deposit.cshtml",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Product\\Deposit.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Product\\Deposit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T16:23:18.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepositViewModel.cs",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\ViewModels\\Products\\DepositViewModel.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\ViewModels\\Products\\DepositViewModel.cs",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\ViewModels\\Products\\DepositViewModel.cs",
+              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\ViewModels\\Products\\DepositViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:23:02.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwE4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T16:22:06.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T15:54:59.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\User\\UserRepository.cs",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\User\\UserRepository.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\User\\UserRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAewHgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:27:56.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditUserDto.cs",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\DTOs\\EditUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:27:24.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Users.cshtml",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Admin\\Users.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T14:25:36.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\NETBACKING.net\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAHwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T14:21:27.572Z",
+              "EditorCaption": ""
             }
           ]
         }

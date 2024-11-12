@@ -9,7 +9,7 @@ public class Service<T> : IService<T> where T : class
 
     public Service(IRepository<T> repository)
     {
-        this._repository = repository;
+        _repository = repository;
     }
 
     public async Task<IEnumerable<T>> GetAllAsync()

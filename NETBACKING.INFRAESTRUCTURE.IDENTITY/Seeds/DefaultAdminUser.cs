@@ -16,7 +16,7 @@ public class DefaultAdminUser
             PhoneNumberConfirmed = true,
             FirstName = "Admin",
             LastName = "User",
-            Identification = "A123456789",
+            Identification = "000-0000000-0",
             IsActive = true,
             InitialAmount = 1000
         };

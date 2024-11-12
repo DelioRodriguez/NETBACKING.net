@@ -30,7 +30,7 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
 
         public async Task<IActionResult> Users()
         {
-            var users = await _userService.GetAllUsers(); // Obtener todos los usuarios
+            var users = await _userService.GetAllUsers(); 
             return View(users);
         }
 
@@ -42,24 +42,48 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserDto userDto)
         {
-            userDto.IsActive = true; 
+            userDto.IsActive = true;
 
             if (ModelState.IsValid)
             {
+                
+                if (await _userService.EmailExistsAsync(userDto.Email))
+                {
+                    ModelState.AddModelError("Email", "El correo electrónico ya está registrado.");
+                }
+
+                
+                if (await _userService.IdentificationExistsAsync(userDto.Identification))
+                {
+                    ModelState.AddModelError("Identification", "La Cedula ya está registrada.");
+                }
+
+            
+                if (await _userService.UsernameExistsAsync(userDto.UserName))
+                {
+                    ModelState.AddModelError("Username", "El nombre de usuario ya está registrado.");
+                }
+
                
-                var userModel = _mapper.Map<UserModel>(userDto);
-                
-                await _userService.CreateUser(userDto, userDto.UserType); 
-                
-                return RedirectToAction(nameof(Users)); 
+                if (!ModelState.IsValid)
+                {
+                    return View(userDto);
+                }
+
+              
+                await _userService.CreateUser(userDto, userDto.UserType);
+                return RedirectToAction(nameof(Users));
             }
 
-            return View(userDto); 
+            return View(userDto);
         }
+
 
         public async Task<IActionResult> EditUser(string id)
         {
             var user = await _userService.GetUserById(id); 
+          
+
 
             if (user == null)
             {
@@ -67,6 +91,7 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
             }
 
             var editUserDto = _mapper.Map<EditUserDto>(user);
+         
 
             return View(editUserDto);
         }
@@ -76,13 +101,29 @@ namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userModel = _mapper.Map<UserModel>(userDto);
+                var existingUser = await _userService.GetUserById(userDto.Id);
+                if (existingUser == null)
+                {
+                    ModelState.AddModelError(string.Empty, "El usuario no existe.");
+                    return View(userDto);
+                }
+
+                if (userDto.Email != existingUser.Email)
+                {
+                    if (await _userService.IsEmailDuplicateAsync(userDto.Email, userDto.Id))
+                    {
+                        ModelState.AddModelError("Email", "El correo electrónico ya está registrado en otro usuario.");
+                        return View(userDto);
+                    }
+                }
+
                 await _userService.UpdateUser(userDto);
                 return RedirectToAction(nameof(Users)); 
             }
 
-            return View(userDto); 
+            return View(userDto);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> ToggleUserStatus(string id)

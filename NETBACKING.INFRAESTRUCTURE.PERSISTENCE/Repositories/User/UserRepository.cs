@@ -9,7 +9,7 @@ using NETBACKING.CORE.APPLICATION.Models;
 using NETBACKING.CORE.APPLICATION.ViewModels.Products;
 using NETBACKING.INFRAESTRUCTURE.IDENTITY.Entities;
 
-namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
+namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.User
 {
     public class UserRepository : IUserRepository
     {
@@ -27,6 +27,28 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             _roleManager = roleManager;
             _mapper = mapper;
             _productService = productService;
+        }
+
+        public async Task<bool> IsEmailDuplicateAsync(string email, string userId)
+        {
+            return await _userManager.Users.AnyAsync(u => u.Email == email && u.Id != userId); 
+        }
+
+        public async Task<bool> EmailExistsAsync(string email)
+        {
+            return await _userManager.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<bool> IdentificationExistsAsync(string identification)
+        {
+            return await _userManager.Users.AnyAsync(u => u.Identification == identification);
+
+        }
+
+        public async Task<bool> UsernameExistsAsync(string username)
+        {
+            return await _userManager.Users.AnyAsync(u => u.UserName == username);
+
         }
 
         public async Task<LoginResultDTO> AuthenticateUserAsync(LoginDTO loginDto)
@@ -179,6 +201,7 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
             user.Identification = userModel.Identification;
             user.Email = userModel.Email;
             user.UserName = userModel.UserName;
+            user.IsActive = userModel.IsActive;
 
             if (!string.IsNullOrEmpty(userModel.Password))
             {

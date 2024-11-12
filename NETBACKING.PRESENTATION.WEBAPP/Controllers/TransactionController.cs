@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.Transactions;
-using NETBACKING.CORE.APPLICATION.ViewModels.Transactions;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
+using NETBACKING.CORE.APPLICATION.Enums;
 
 namespace NETBACKING.PRESENTATION.WEBAPP.Controllers
 {
+    [Authorize(Roles = nameof(Roles.Client))]
     public class TransactionController : Controller
     {
         private readonly ITransactionsService _transactionService;

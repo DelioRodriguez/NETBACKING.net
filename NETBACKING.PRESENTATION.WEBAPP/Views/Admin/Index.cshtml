@@ -30,11 +30,11 @@ Layout = null;
         .btn-logout {
             background-color: #dc3545;
             color: #ffffff;
-            border-radius: 50px; /* Botón redondeado */
-            padding: 10px 30px; /* Espaciado ajustado */
-            font-size: 16px; /* Tamaño de fuente */
+            border-radius: 50px;
+            padding: 10px 30px; 
+            font-size: 16px; 
             transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
         }
 
         .btn-logout:hover {
@@ -64,10 +64,10 @@ Layout = null;
         }
 
         .card-title {
-            font-size: 20px; /* Aumentar tamaño */
-            color: #007A33;
+            font-size: 20px; 
+            color: #0975ee;
             font-weight: bold;
-            margin-bottom: 10px; /* Ajustar margen */
+            margin-bottom: 10px;
         }
 
         .card-content {
@@ -77,81 +77,86 @@ Layout = null;
         }
 
         .btn-manage {
-            background-color: #007A33;
+            background-color: #0975ee;
             color: #ffffff;
-            border-radius: 50px; /* Botón redondeado */
-            padding: 10px 30px; /* Espaciado ajustado */
-            font-size: 16px; /* Tamaño de fuente */
+            border-radius: 50px; 
+            padding: 10px 30px; 
+            font-size: 16px; 
             transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
         }
 
         .btn-manage:hover {
-            background-color: #005f29;
+            background-color: #86afff;
             transform: translateY(-2px);
         }
 
-        .text-center {
-            margin-top: 40px;
-        }
+    
 
-        /* Estilo del contenedor */
+      
         .container {
-            max-width: 1200px; /* Ancho máximo */
-            margin: 0 auto; /* Centrado */
-            padding: 20px; /* Espaciado interior */
+            max-width: 1200px;
+            margin: 0 auto; 
+            padding: 20px; 
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="dashboard-header">
-        <h1 class="h3">Dashboard</h1>
-        <a href="/Account/Logout" class="btn btn-logout">Cerrar Sesión</a>
+    <div class="container">
+        <div class="dashboard-header">
+            <h1 class="h3">Dashboard</h1>
+            <a href="/Account/Logout" class="btn btn-logout">Cerrar Sesión</a>
+        </div>
+
+        <div class="dashboard-cards">
+            <div class="card">
+                <h5 class="card-title">Total de Transacciones</h5>
+                <div class="card-content">@Model.TotalTransactions</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Transacciones de Hoy</h5>
+                <div class="card-content">@Model.TransactionsToday</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Total de Pagos</h5>
+                <div class="card-content">@Model.TotalPayments</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Pagos de Hoy</h5>
+                <div class="card-content">@Model.PaymentsToday</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Clientes Activos</h5>
+                <div class="card-content">@Model.ActiveCustomers</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Clientes Inactivos</h5>
+                <div class="card-content">@Model.InactiveCustomers</div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-title">Productos Asignados</h5>
+                <div class="card-content">@Model.AssignedProducts</div>
+            </div>
+        </div>
+
+        <!-- Contenedor para los botones -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <a href="/Admin/Users" class="btn btn-manage">Administrar Usuarios</a>
+            </div>
+            <div class="col-auto">
+                <a href="/Product/Deposit" class="btn btn-manage">Depositar</a>
+            </div>
+        </div>
     </div>
 
-    <div class="dashboard-cards">
-        <div class="card">
-            <h5 class="card-title">Total de Transacciones</h5>
-            <div class="card-content">@Model.TotalTransactions</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Transacciones de Hoy</h5>
-            <div class="card-content">@Model.TransactionsToday</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Total de Pagos</h5>
-            <div class="card-content">@Model.TotalPayments</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Pagos de Hoy</h5>
-            <div class="card-content">@Model.PaymentsToday</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Clientes Activos</h5>
-            <div class="card-content">@Model.ActiveCustomers</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Clientes Inactivos</h5>
-            <div class="card-content">@Model.InactiveCustomers</div>
-        </div>
-
-        <div class="card">
-            <h5 class="card-title">Productos Asignados</h5>
-            <div class="card-content">@Model.AssignedProducts</div>
-        </div>
-    </div>
-
-    <div class="text-center">
-        <a href="/Admin/Users" class="btn btn-manage">Administrar Usuarios</a>
-    </div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

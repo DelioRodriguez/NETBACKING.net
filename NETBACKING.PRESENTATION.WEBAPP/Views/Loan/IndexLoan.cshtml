@@ -10,7 +10,7 @@ Layout = "_LayoutClient";
     </h2>
 
     <form method="post" asp-action="IndexLoan" id="paymentForm">
-        <!-- Selección de Préstamo -->
+       
         <div class="mb-4">
             <label for="loanSelect" class="form-label fw-bold">
                 <i class="bi bi-bank"></i> Seleccione el Préstamo
@@ -22,7 +22,7 @@ Layout = "_LayoutClient";
 
                 @foreach (var loans in Model.Loans)
                 {
-                if (loans.LoanAmount == 0) continue; // Omitir préstamos con LoanAmount de 0
+                if (loans.LoanAmount == 0) continue; 
 
                 <option value="@loans.UniqueIdentifier" data-debt="@loans.Balance">
                     Préstamo @loans.UniqueIdentifier - Deuda: @loans.LoanAmount
@@ -31,7 +31,7 @@ Layout = "_LayoutClient";
             </select>
         </div>
 
-        <!-- Cuenta desde la que se paga -->
+       
         <div class="mb-4">
             <label for="accountSelect" class="form-label fw-bold">
                 <i class="bi bi-wallet2"></i> Cuenta de Origen
@@ -49,7 +49,7 @@ Layout = "_LayoutClient";
             </select>
         </div>
 
-        <!-- Monto de Pago -->
+  
         <div class="mb-4">
             <label for="paymentAmount" class="form-label fw-bold">
                 <i class="bi bi-currency-dollar"></i> Monto a Pagar
@@ -57,13 +57,13 @@ Layout = "_LayoutClient";
             <input type="number" class="form-control shadow-sm" id="paymentAmount" name="amount" placeholder="Ingrese el monto a pagar" min="1" required>
         </div>
 
-        <!-- Botón de envío -->
+
         <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmPayLoan()">
             <i class="bi bi-cash-coin"></i> Realizar Pago
         </button>
     </form>
 
-    <!-- Scripts de alerta para éxito y error -->
+  
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
