@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {}
+    "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {}
   },
   "projects": {
-    "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+    "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+        "projectUniqueName": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
         "projectName": "NETBACKING.CORE.APPLICATION",
-        "projectPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\obj\\",
+        "projectPath": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj",
+        "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+              "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
               }
             }
           }
@@ -79,17 +79,17 @@
         }
       }
     },
-    "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+    "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+        "projectUniqueName": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
         "projectName": "NETBACKING.CORE.DOMAIN",
-        "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\obj\\",
+        "projectPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -140,17 +140,17 @@
         }
       }
     },
-    "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
+    "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+        "projectUniqueName": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
         "projectName": "NETBACKING.INFRAESTRUCTURE.IDENTITY",
-        "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\obj\\",
+        "projectPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj",
+        "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -165,11 +165,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
+              "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
               },
-              "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+              "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
               }
             }
           }
@@ -250,17 +250,17 @@
         }
       }
     },
-    "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {
+    "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj",
+        "projectUniqueName": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj",
         "projectName": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE",
-        "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\obj\\",
+        "projectPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj",
+        "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -275,14 +275,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
+              "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj"
               },
-              "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
+              "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.CORE.DOMAIN\\NETBACKING.CORE.DOMAIN.csproj"
               },
-              "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
-                "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj"
+              "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj": {
+                "projectPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.IDENTITY\\NETBACKING.INFRAESTRUCTURE.IDENTITY.csproj"
               }
             }
           }

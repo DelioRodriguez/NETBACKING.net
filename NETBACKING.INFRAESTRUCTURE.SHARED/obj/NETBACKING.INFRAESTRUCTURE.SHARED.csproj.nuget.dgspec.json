@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {}
+    "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {}
   },
   "projects": {
-    "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
+    "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+        "projectUniqueName": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
         "projectName": "NETBACKING.INFRAESTRUCTURE.SHARED",
-        "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
-        "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
+        "projectPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+        "packagesPath": "C:\\Users\\dayne\\.nuget\\packages\\",
+        "outputPath": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

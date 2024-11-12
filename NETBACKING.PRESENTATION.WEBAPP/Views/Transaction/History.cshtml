@@ -1,0 +1,72 @@
+﻿@model List<NETBACKING.CORE.APPLICATION.ViewModels.Transactions.TransactionHistoryViewModel>
+
+@{
+    ViewData["Title"] = "Historial de Transacciones";
+    Layout = "_LayoutClient";
+}
+
+<div class="container-fluid mt-5">
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-clock-history"></i> Historial de Transacciones
+    </h2>
+    <div class="card shadow border-0">
+        <div class="card-body p-4">
+            @if (Model != null && Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle border border-primary">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="text-start"><i class="bi bi-calendar-event"></i> Fecha</th>
+                                <th class="text-start"><i class="bi bi-arrows-move"></i> Tipo de Transacción</th>
+                                <th class="text-start"><i class="bi bi-box-arrow-right"></i> Cuenta Origen</th>
+                                <th class="text-start"><i class="bi bi-box-arrow-in-right"></i> Cuenta Destino</th>
+                                <th class="text-start"><i class="bi bi-currency-exchange"></i> Monto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in Model)
+                            {
+                                <tr>
+                                    <td class="text-start text-muted">
+                                        <i class="bi bi-calendar4-week text-primary"></i>
+                                        @transaction.Date.ToString("dd/MM/yyyy hh:mm tt")
+                                    </td>
+                                    <td class="text-start text-dark">
+                                        <i class="bi bi-tag-fill text-primary"></i>
+                                        @transaction.TransactionType
+                                    </td>
+                                    <td class="text-start text-dark">
+                                        <i class="bi bi-arrow-right-circle text-primary"></i>
+                                        @transaction.SourceAccountIdentifier
+                                    </td>
+                                    <td class="text-start text-dark">
+                                        <i class="bi bi-arrow-left-circle text-primary"></i>
+                                        @(transaction.DestinationAccountIdentifier ?? "N/A")
+                                    </td>
+                                    <td class="text-start fw-bold text-dark">
+                                        <i class="bi bi-currency-dollar text-primary"></i>
+                                        @transaction.Amount
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info text-center">
+                    <i class="bi bi-exclamation-circle"></i> <strong>No se encontraron transacciones.</strong>
+                    <p class="mb-0">Asegúrate de haber realizado alguna transacción previamente.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Puedes añadir scripts adicionales aquí si es necesario.
+    </script>
+}

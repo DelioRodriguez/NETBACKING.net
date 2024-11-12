@@ -125,7 +125,7 @@
     <div class="d-flex">
         <nav id="sidebarMenu" class="bg-white">
             <div>
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NETBACKING</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Client" asp-action="Index">NETBACKING</a>
                 <div>
                     <a class="nav-link" asp-area="" asp-controller="Client" asp-action="Index">
                         <i class="bi bi-box"></i> Productos
@@ -154,6 +154,9 @@
                                     <a class="nav-link ps-4" asp-area="" asp-controller="Beneficiary" asp-action="PagoBeneficiaries">
                                         <i class="bi bi-person-check-fill"></i> Beneficiarios
                                     </a>
+                                    <a class="nav-link ps-4" asp-area="" asp-controller="Transaction" asp-action="History">
+                                        <i class="bi bi-person-check-fill"></i> Historial de pagos
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -161,6 +164,9 @@
                     <a class="nav-link mt-2" asp-area="" asp-controller="CashAdvances" asp-action="Create">
                         <i class="bi bi-wallet"></i> Avances de efectivo
                     </a>
+                    <a class="nav-link ps-4" asp-area="" asp-controller="SingleTransfer" asp-action="CreateSingleTransfer">
+                                <i class="bi bi-person-check-fill"></i> Transferencia entre cuenta
+                            </a>
                 </div>
             </div>
             <a class="btn logout-btn" href="@Url.Action("Logout", "Account")">
