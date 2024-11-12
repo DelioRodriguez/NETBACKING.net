@@ -6,66 +6,78 @@
 }
 
 <div class="container mt-4">
- 
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-card-list"></i> <span>Lista de Productos</span>
+    </h2>
 
-    <div class="row">
+    <div class="row justify-content-center">
         @if (!Model.Any())
         {
-            <p>No hay productos disponibles.</p>
+            <div class="col-md-6">
+                <div class="alert alert-info text-center shadow-sm">
+                    <i class="bi bi-info-circle-fill text-primary"></i> <span>No hay productos disponibles.</span>
+                </div>
+            </div>
         }
         else
         {
-            <div class="row">
+            <div class="row gx-4 gy-4">
                 @foreach (var product in Model.Where(p => p.ProductType != "Prestamo" || p.LoanAmount > 0))
                 {
-                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                        <div class="card shadow-sm h-100">
-                            <div class="card-body">
-                                <h5 class="card-title">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="card h-100 shadow border-0">
+                            <div class="card-header bg-primary text-white text-center">
+                                <h5 class="card-title mb-0">
                                     @if (product.ProductType == "CuentaAhorro")
                                     {
                                         <i class="bi bi-bank"></i> <span>Cuenta de Ahorro</span>
                                     }
                                     else if (product.ProductType == "Tarjetacredito")
                                     {
-                                        <i class="bi bi-credit-card"></i> <span>Tarjeta de Credito</span>
+                                        <i class="bi bi-credit-card"></i> <span>Tarjeta de Crédito</span>
                                     }
                                     else if (product.ProductType == "Prestamo")
                                     {
-                                        <i class="bi bi-cash-stack"></i> <span>Prestamo</span> 
+                                        <i class="bi bi-cash-stack"></i> <span>Préstamo</span>
                                     }
                                 </h5>
-                                @if (product.ProductType == "CuentaAhorro")
-                                {
-                                    <p class="card-text">
-                                        <strong>Identificador:</strong> @product.UniqueIdentifier <br />
-                                        <strong>Balance:</strong> $@product.Balance
-                                    </p>
-                                }
-                                else if (product.ProductType == "Tarjetacredito")
-                                {
-                                    <p class="card-text">
-                                        <strong>Identificador:</strong> @product.UniqueIdentifier <br />
-                                        <strong>Deuda:</strong> $@product.Balance <br/>
-                                        <strong>Limite de Credito:</strong> $@product.CreditLimit
-                                    </p>
-                                }
-                                else if (product.ProductType == "Prestamo")
-                                {
-                                    <p class="card-text">
-                                        <strong>Identificador:</strong> @product.UniqueIdentifier <br />
-                                        <strong>Deuda del Prestamo:</strong> $@product.LoanAmount <br/>
-                                    </p>
-                                }
                             </div>
-                            <div class="card-footer text-muted text-center">
-                                <small class="text-muted">@if (product.IsPrimary) { <span class="badge bg-primary">Principal</span> } else { <span class="badge bg-secondary">Secundario</span> }</small>
+
+                            <div class="card-body p-4">
+                                <p class="card-text text-dark">
+                                    <strong><i class="bi bi-tag"></i> Identificador:</strong> <span>@product.UniqueIdentifier</span> <br />
+                                    @if (product.ProductType == "CuentaAhorro")
+                                    {
+                                        <strong><i class="bi bi-wallet2"></i> Balance:</strong> <span>$@product.Balance</span>
+                                    }
+                                    else if (product.ProductType == "Tarjetacredito")
+                                    {
+                                        <strong><i class="bi bi-wallet"></i> Deuda:</strong> <span>$@product.Balance</span> <br />
+                                        <strong><i class="bi bi-credit-card-2-front"></i> Limite: </strong> <span>$@product.CreditLimit</span>
+                                    }
+                                    else if (product.ProductType == "Prestamo")
+                                    {
+                                        <strong><i class="bi bi-cash"></i> Deuda: </strong> <span>$@product.LoanAmount</span>
+                                    }
+                                </p>
+                            </div>
+
+                            <div class="card-footer bg-light text-center">
+                                <span class="badge rounded-pill @(product.IsPrimary ? "bg-primary text-white" : "bg-secondary text-white")">
+                                    @if (product.IsPrimary)
+                                    {
+                                        <i class="bi bi-star-fill"></i> <span>Principal</span>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-star"></i> <span>Secundario</span>
+                                    }
+                                </span>
                             </div>
                         </div>
                     </div>
                 }
             </div>
         }
-
     </div>
 </div>

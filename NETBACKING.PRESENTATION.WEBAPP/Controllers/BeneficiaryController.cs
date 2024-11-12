@@ -69,7 +69,7 @@ public class BeneficiaryController : Controller
                 return RedirectToAction("PagoBeneficiaries");  
             }
         
-            await _expressService.RealizarPagoExpressAsync(model);
+            await _expressService.RealizarPagoBeneficiariosAsync(model);
             TempData["SuccessMessage"] = "Pago realizado con exito.";
             return RedirectToAction("PagoBeneficiaries");
         }

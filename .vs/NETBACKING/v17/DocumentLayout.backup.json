@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\NetBanking\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbanking\\netbacking.presentation.webapp\\controllers\\cashadvancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\cashadvancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|c:\\netbanking\\netbacking.infraestructure.persistence\\repositories\\transactions\\transactions\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29F4E3D9-0BDC-4728-99C0-D3DE372D1433}|NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE.csproj|solutionrelative:netbacking.infraestructure.persistence\\repositories\\transactions\\transactions\\transactionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbanking\\netbacking.core.application\\services\\cashavances\\cashadvancesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\cashavances\\cashadvancesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbanking\\netbacking.presentation.webapp\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbanking\\netbacking.presentation.webapp\\views\\cashadvances\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\cashadvances\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbanking\\netbacking.core.application\\services\\transactions\\transactions\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\services\\transactions\\transactions\\transactionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbanking\\netbacking.core.application\\viewmodels\\cashadvance\\cashadvanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\viewmodels\\cashadvance\\cashadvanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|c:\\netbanking\\netbacking.presentation.webapp\\views\\transaction\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{972C983B-4060-4769-B845-E3C55DF44171}|NETBACKING.PRESENTATION.WEBAPP\\NETBACKING.PRESENTATION.WEBAPP.csproj|solutionrelative:netbacking.presentation.webapp\\views\\transaction\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|c:\\netbanking\\netbacking.core.application\\viewmodels\\transactions\\transactionhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2560F3D6-1A4E-4B53-B819-AAC1BA6B627A}|NETBACKING.CORE.APPLICATION\\NETBACKING.CORE.APPLICATION.csproj|solutionrelative:netbacking.core.application\\viewmodels\\transactions\\transactionhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,63 +29,84 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 185,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CashAdvancesController.cs",
-              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\CashAdvancesController.cs",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\CashAdvancesController.cs",
-              "ToolTip": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\CashAdvancesController.cs",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\CashAdvancesController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAcwCIAAAAAAAAAAAAAAA==",
+              "Title": "TransactionsRepository.cs",
+              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\Transactions\\Transactions\\TransactionsRepository.cs",
+              "RelativeDocumentMoniker": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\Transactions\\Transactions\\TransactionsRepository.cs",
+              "ToolTip": "C:\\NetBanking\\NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\Transactions\\Transactions\\TransactionsRepository.cs",
+              "RelativeToolTip": "NETBACKING.INFRAESTRUCTURE.PERSISTENCE\\Repositories\\Transactions\\Transactions\\TransactionsRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:39:37.57Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CashAdvancesService.cs",
-              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\Services\\CashAvances\\CashAdvancesService.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Services\\CashAvances\\CashAdvancesService.cs",
-              "ToolTip": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\Services\\CashAvances\\CashAdvancesService.cs",
-              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Services\\CashAvances\\CashAdvancesService.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwC4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:23:52.693Z",
+              "WhenOpened": "2024-11-11T22:22:14.357Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Views\\CashAdvances\\Create.cshtml",
-              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\CashAdvances\\Create.cshtml",
-              "ToolTip": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Views\\CashAdvances\\Create.cshtml",
-              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\CashAdvances\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T19:37:51.95Z",
+              "Title": "TransactionsService.cs",
+              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\Services\\Transactions\\Transactions\\TransactionsService.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\Services\\Transactions\\Transactions\\TransactionsService.cs",
+              "ToolTip": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\Services\\Transactions\\Transactions\\TransactionsService.cs",
+              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\Services\\Transactions\\Transactions\\TransactionsService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:21:44.432Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CashAdvanceViewModel.cs",
-              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\ViewModels\\CashAdvance\\CashAdvanceViewModel.cs",
-              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\ViewModels\\CashAdvance\\CashAdvanceViewModel.cs",
-              "ToolTip": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\ViewModels\\CashAdvance\\CashAdvanceViewModel.cs",
-              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\ViewModels\\CashAdvance\\CashAdvanceViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:44:09.113Z",
+              "WhenOpened": "2024-11-11T22:48:40.138Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\ViewModels\\Transactions\\TransactionHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "NETBACKING.CORE.APPLICATION\\ViewModels\\Transactions\\TransactionHistoryViewModel.cs",
+              "ToolTip": "C:\\NetBanking\\NETBACKING.CORE.APPLICATION\\ViewModels\\Transactions\\TransactionHistoryViewModel.cs",
+              "RelativeToolTip": "NETBACKING.CORE.APPLICATION\\ViewModels\\Transactions\\TransactionHistoryViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T22:40:09.304Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "History.cshtml",
+              "DocumentMoniker": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Transaction\\History.cshtml",
+              "RelativeDocumentMoniker": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Transaction\\History.cshtml",
+              "ToolTip": "C:\\NetBanking\\NETBACKING.PRESENTATION.WEBAPP\\Views\\Transaction\\History.cshtml",
+              "RelativeToolTip": "NETBACKING.PRESENTATION.WEBAPP\\Views\\Transaction\\History.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T23:53:25.901Z",
               "EditorCaption": ""
             }
           ]

@@ -6,9 +6,11 @@ using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Beneficiarys;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.CashAvance;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Generic;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Products;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.SingleTransfer;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.CreditCard;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Express;
 using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Loan;
+using NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Transactions.Transactions;
 using NETBACKING.CORE.APPLICATION.Interfaces.Services.Transactions.Express;
 using NETBACKING.CORE.APPLICATION.Services.Transactions.CreditCard;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Context;
@@ -17,9 +19,11 @@ using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Beneficiarys;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.CashAdvances;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Generic;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Products;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.SingleTransfer;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.CreditCard;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Express;
 using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Loan;
+using NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories.Transactions.Transactions;
 
 namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
 {
@@ -35,6 +39,8 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE
             services.AddScoped<ICreditCardRepository, CreditCardRepository>();
             services.AddScoped<ILoanRepository, LoanRepository>();
             services.AddScoped<ICashAdvancesRepository, CashAdvancesRepository>();
+            services.AddScoped<ISingleTransferRepository, SingleTransferRepository>();
+            services.AddScoped<ITransactionsRepository, TransactionsRepository>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             if (configuration.GetValue<bool>("UseInMemoryDatabase"))

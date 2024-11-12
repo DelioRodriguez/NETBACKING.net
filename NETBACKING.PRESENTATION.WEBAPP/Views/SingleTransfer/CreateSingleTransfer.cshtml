@@ -1,0 +1,153 @@
+﻿@model NETBACKING.CORE.APPLICATION.ViewModels.SingleTransfer.TransferViewModel
+
+@{
+    ViewData["Title"] = "Transaccion entre cuentas";
+    Layout = "_LayoutClient";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4 text-primary">
+        <i class="bi bi-arrow-left-right"></i> Transferencia de Fondos
+    </h2>
+
+    <form asp-action="CreateSingleTransfer" method="post" id="transferForm" novalidate>
+        <div class="mb-4">
+            <label asp-for="SourceAccountId" class="form-label fw-bold">
+                <i class="bi bi-wallet-fill"></i> Cuenta Origen
+            </label>
+            <select asp-for="SourceAccountId" class="form-select shadow-sm" id="sourceAccount" required onchange="updateOptions()">
+                <option value="-1">Seleccione una cuenta</option>
+                @foreach (var account in Model.Accounts)
+                {
+                    <option value="@account.Id">
+                        @if (account.ProductType == "CuentaAhorro")
+                        {
+                            @:Cuenta de Ahorro: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                        else if (account.ProductType == "CuentaCorriente")
+                        {
+                            @:Cuenta Corriente: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                        else
+                        {
+                            @:@account.ProductType: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                    </option>
+                }
+            </select>
+            <span asp-validation-for="SourceAccountId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="DestinationAccountId" class="form-label fw-bold">
+                <i class="bi bi-wallet2"></i> Cuenta Destino
+            </label>
+            <select asp-for="DestinationAccountId" class="form-select shadow-sm" id="destinationAccount" required onchange="updateOptions()">
+                <option value="-1">Seleccione una cuenta</option>
+                @foreach (var account in Model.Accounts)
+                {
+                    <option value="@account.Id">
+                        @if (account.ProductType == "CuentaAhorro")
+                        {
+                            @:Cuenta de Ahorro: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                        else if (account.ProductType == "CuentaCorriente")
+                        {
+                            @:Cuenta Corriente: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                        else
+                        {
+                            @:@account.ProductType: @account.UniqueIdentifier - Balance: @account.Balance
+                        }
+                    </option>
+                }
+            </select>
+            <span asp-validation-for="DestinationAccountId" class="text-danger"></span>
+        </div>
+
+        <div class="mb-4">
+            <label asp-for="Amount" class="form-label fw-bold">
+                <i class="bi bi-currency-dollar"></i> Monto
+            </label>
+            <input asp-for="Amount" type="number" step="0.01" class="form-control shadow-sm" required />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+
+        <button type="button" class="btn btn-primary w-100 py-2 fw-bold" onclick="confirmTransfer()">
+            <i class="bi bi-arrow-right-circle"></i> Transferir
+        </button>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    function updateOptions() {
+        const sourceAccount = document.getElementById('sourceAccount');
+        const destinationAccount = document.getElementById('destinationAccount');
+
+        const selectedSource = sourceAccount.value;
+        const selectedDestination = destinationAccount.value;
+
+        Array.from(sourceAccount.options).forEach(option => option.disabled = false);
+        Array.from(destinationAccount.options).forEach(option => option.disabled = false);
+
+        if (selectedSource !== "-1") {
+            Array.from(destinationAccount.options).forEach(option => {
+                if (option.value === selectedSource) option.disabled = true;
+            });
+        }
+        if (selectedDestination !== "-1") {
+            Array.from(sourceAccount.options).forEach(option => {
+                if (option.value === selectedDestination) option.disabled = true;
+            });
+        }
+    }
+
+    function confirmTransfer() {
+        const form = document.getElementById('transferForm');
+        const button = document.querySelector("button[type='button']");
+
+        Swal.fire({
+            title: '¿Confirmar Transferencia?',
+            text: "Por favor, confirme para proceder con la transferencia de fondos.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, confirmar',
+            cancelButtonText: 'Cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                button.disabled = true;
+                form.submit();
+            }
+        });
+    }
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <text>
+            Swal.fire({
+                icon: 'success',
+                title: '¡Éxito!',
+                text: '@TempData["SuccessMessage"]',
+                showConfirmButton: true,
+                timer: 5000
+            });
+        </text>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <text>
+            Swal.fire({
+                icon: 'error',
+                title: '¡Error!',
+                text: '@TempData["ErrorMessage"]',
+                showConfirmButton: true,
+                timer: 5000
+            });
+        </text>
+    }
+</script>
