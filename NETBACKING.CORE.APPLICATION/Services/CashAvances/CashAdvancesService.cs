@@ -42,18 +42,26 @@ namespace NETBACKING.CORE.APPLICATION.Services.CashAvances
             }
             
             if (creditCard.Balance <= creditCard.CreditLimit){
+               
                 creditCard.Balance += amount + interest;
                 destinationAccount.Balance += amount;
-
-                await _cashAdvancesRepository.AddAsync(cashAdvance);
-                await _productRepository.UpdateAsync(creditCard);
-                await _productRepository.UpdateAsync(destinationAccount);
+                if (creditCard.Balance <= creditCard.CreditLimit)
+                {
+                  
+                    await _cashAdvancesRepository.AddAsync(cashAdvance);
+                    await _productRepository.UpdateAsync(creditCard);
+                    await _productRepository.UpdateAsync(destinationAccount);
+                }
+                else
+                {
+                    throw new Exception("El monto solicitado excede el limite de credito de la tarjeta seleccionada.");
+                }
             }
             else
             {
                 throw new Exception("El monto solicitado excede el limite de credito de la tarjeta seleccionada.");
             }
-
+          
             return true;
         }
     }

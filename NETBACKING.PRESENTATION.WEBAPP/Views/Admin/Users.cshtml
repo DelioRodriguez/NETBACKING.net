@@ -1,4 +1,6 @@
 ﻿@model IEnumerable<NETBACKING.CORE.APPLICATION.Models.UserModel>
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Mvc.TagHelpers
 @using NETBACKING.CORE.APPLICATION.Enums
 
 @{
@@ -22,6 +24,8 @@ ViewData["Title"] = "Listado de Usuarios";
     <div class="row" id="userList">
         @foreach (var user in Model)
         {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (user.Id.ToString() == currentUserId) continue;
         <div class="col-md-6 col-lg-4 mb-4 user-card" data-id="@user.Identification">
             <div class="card shadow-sm border-0">
                 <div class="card-body">

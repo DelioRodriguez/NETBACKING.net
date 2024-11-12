@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\rodri\\.nuget\\packages\\": {}
+    "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+      "projectUniqueName": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
       "projectName": "NETBACKING.INFRAESTRUCTURE.SHARED",
-      "projectPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
-      "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\OneDrive\\Escritorio\\NETBACKING.net\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
+      "projectPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\NETBACKING.INFRAESTRUCTURE.SHARED.csproj",
+      "packagesPath": "C:\\Users\\Delio Rodriguez\\.nuget\\packages\\",
+      "outputPath": "C:\\NetBacking\\NETBACKING.INFRAESTRUCTURE.SHARED\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rodri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Delio Rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

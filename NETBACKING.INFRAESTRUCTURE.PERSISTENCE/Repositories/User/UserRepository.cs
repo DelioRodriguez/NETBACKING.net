@@ -118,7 +118,7 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
 
         public async Task CreateUser(CreateUserDto userDto, string role)
         {
-            // Validación del rol
+           
             if (!Enum.TryParse(role, true, out Roles parsedRole))
             {
                 throw new ArgumentException("Invalid role specified.");
@@ -145,7 +145,6 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
                 throw new InvalidOperationException("User ID not assigned after user creation.");
             }
 
-            // Asignar el rol
             var roleResult = await _userManager.AddToRoleAsync(user, role);
             if (!roleResult.Succeeded)
             {
@@ -169,20 +168,30 @@ namespace NETBACKING.INFRAESTRUCTURE.PERSISTENCE.Repositories
         }
 
 
-
         public async Task UpdateUserAsync(UserModel userModel)
         {
             var user = await _userManager.FindByIdAsync(userModel.Id);
             if (user == null) throw new Exception("Usuario no encontrado");
 
+          
             user.FirstName = userModel.FirstName;
             user.LastName = userModel.LastName;
             user.Identification = userModel.Identification;
             user.Email = userModel.Email;
             user.UserName = userModel.UserName;
 
+            if (!string.IsNullOrEmpty(userModel.Password))
+            {
+               
+                await _userManager.RemovePasswordAsync(user);
+              
+                await _userManager.AddPasswordAsync(user, userModel.Password);
+            }
+
+           
             await _userManager.UpdateAsync(user);
         }
+
 
         public async Task DeleteUserAsync(string id)
         {
