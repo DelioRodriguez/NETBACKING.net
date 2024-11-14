@@ -55,13 +55,7 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
         {
             throw new AddBeneficiaryException("No se puede agregar la cuenta propia como beneficiario.", null);
         }
-
-        var existeBeneficiario = await _beneficiaryRepository.BeneficiaryExistsAsync(idCuenta);
-        if (existeBeneficiario)
-        {
-            throw new AddBeneficiaryException("Este beneficiario ya ha sido agregado previamente.", null);
-        }
-
+        
         var user = await _userRepository.GetUserByIdAsync(product.ApplicationUserId);
         if (user == null)
         {
@@ -89,6 +83,10 @@ public class BeneficiaryService : Service<Beneficiary>, IBeneficiaryService
 }
 
 
+  public async Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAndbyUserId(string idCuenta, string? idUser)
+    {
+        return _mapper.Map<BeneficiaryViewModel>(await _beneficiaryRepository.GetByUserIdAndAccountNumberAsync(idUser, idCuenta));
+    }
 
     public async Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAsync(string idCuenta)
     {

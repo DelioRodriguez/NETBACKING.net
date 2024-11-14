@@ -18,9 +18,9 @@ public class BeneficiaryRepository : Repository<Beneficiary>, IBeneficiaryReposi
     public async Task<bool> BeneficiaryExistsAsync(string idCuenta)
     {
         return await _context.Beneficiaries
-            .AnyAsync(b => b.AccountNumber == idCuenta);
+            .AnyAsync(b => b!.AccountNumber == idCuenta);
     }
-    
+
     public async Task<Beneficiary?> GetBeneficiaryByIdCuentaAsync(string idCuenta)
     {
         return await _context.Beneficiaries
@@ -33,7 +33,7 @@ public class BeneficiaryRepository : Repository<Beneficiary>, IBeneficiaryReposi
             .FirstOrDefaultAsync(b => b.ApplicationUserId == userId && b.AccountNumber == accountNumber);
     }
 
-    public  async Task<List<Beneficiary>> GetByIdUserAsyncModel(string? id)
+    public  async Task<List<Beneficiary?>> GetByIdUserAsyncModel(string? id)
     {
         return await _context.Beneficiaries
             .Where(b => b.ApplicationUserId == id)

@@ -49,7 +49,7 @@ public class LoanController : Controller
 
             if (paymentSuccess)
             {
-                TempData["SuccessMessage"] = "Pago realizado con éxito.";
+                TempData["SuccessMessage"] = "Pago realizado con exito.";
                 return RedirectToAction("indexLoan");
             }
             

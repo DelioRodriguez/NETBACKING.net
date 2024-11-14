@@ -9,5 +9,5 @@ public interface IBeneficiaryService : IService<Beneficiary>
     Task<List<BeneficiaryViewModel>> GetByIdUserAsyncModel(string? id);
     Task AddAsyncByModel(string idCuenta, string? idUser);
     Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAsync(string idCuenta);
-    
+    Task<BeneficiaryViewModel?> GetBeneficiaryByIdCuentaAndbyUserId(string idCuenta, string? idUser);
 }

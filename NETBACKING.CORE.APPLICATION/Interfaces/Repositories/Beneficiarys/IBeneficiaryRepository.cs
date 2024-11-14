@@ -6,7 +6,8 @@ namespace NETBACKING.CORE.APPLICATION.Interfaces.Repositories.Beneficiarys;
 public interface IBeneficiaryRepository : IRepository<Beneficiary>
 {
    
-    Task<List<Beneficiary>> GetByIdUserAsyncModel(string? id);
+    Task<List<Beneficiary?>> GetByIdUserAsyncModel(string? id);
     Task<Beneficiary?> GetBeneficiaryByIdCuentaAsync(string idCuenta);
     Task<bool> BeneficiaryExistsAsync(string idCuenta);
+    Task<Beneficiary?> GetByUserIdAndAccountNumberAsync(string? userId, string accountNumber);
 }

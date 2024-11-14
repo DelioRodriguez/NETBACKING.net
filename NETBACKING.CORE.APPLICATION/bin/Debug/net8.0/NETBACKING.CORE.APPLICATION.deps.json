@@ -61,10 +61,7 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "NETBACKING.CORE.DOMAIN/1.0.0": {
         "runtime": {
-          "NETBACKING.CORE.DOMAIN.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "NETBACKING.CORE.DOMAIN.dll": {}
         }
       }
     }

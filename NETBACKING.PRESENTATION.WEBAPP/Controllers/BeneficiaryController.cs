@@ -86,14 +86,13 @@ public class BeneficiaryController : Controller
     {
         if (string.IsNullOrEmpty(idCuenta))
         {
-            TempData["ErrorMessage"] = "El campo 'idCuenta' no puede estar vacío.";
+            TempData["ErrorMessage"] = "El campo 'idCuenta' no puede estar vacio.";
             return RedirectToAction("Beneficiaries");
         }
 
-        var u = await _beneficiaryService.GetBeneficiaryByIdCuentaAsync(idCuenta);
-        var bene = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        var u = await _beneficiaryService.GetBeneficiaryByIdCuentaAndbyUserId(idCuenta, User.FindFirstValue(ClaimTypes.NameIdentifier));
         
-        if (u?.ApplicationUserId == bene )
+        if (u != null)
         {
             TempData["ErrorMessage"] = "El Beneficiario ya esta agregado.";
             return RedirectToAction("Beneficiaries");
